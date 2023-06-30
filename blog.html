@@ -1,0 +1,35 @@
+---
+layout: main
+---
+
+<style>
+  ul,
+  ol {
+    padding-left: 0;
+    list-style-type: none;
+  }
+</style>
+
+<div class="container">
+  {% include nav.html %}
+  <h1>blog</h1>
+  <p class="subtitle">there's more to come! i just finished rewriting my site and such; preparing to eventually write more about ongoing projects or rabbit holes i find myself researching.</p>
+  {%- if site.posts.size > 0 -%}
+  <ul class="post-list">
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- for post in site.posts -%}
+    <li>
+      <p>
+      <h3><a class="subtle-link" href="{{ post.url }}">{{ post.title | escape }} →</a>
+      </h3>
+      <small>{{ post.date | date: site.date_format | downcase }} <span>{%- if post.edited -%}(updated: {{ post.edited | date: site.date_format | downcase }}){%- endif -%}</span></small><br>
+      {{ post.excerpt | escape }}
+      </p>
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- else -%}
+  <p class="subtitle">nothing to see here... yet</p>
+  {%- endif -%}
+
+</div>
