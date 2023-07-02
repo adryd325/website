@@ -5,7 +5,7 @@ excerpt: >-
 layout: post
 ---
 
-As of June 30th, 2023, Twitter has made the decision to require users to log in to access the site. This breaks 3rd party clients such as ~~[Nitter](https://nitter.net/)~~ [Update: apparently Nitter can still fetch posts despite using the guest API, I'll have to look into that later] and embeds on many sites including with my [video embeds bot](https://github.com/adryd325/discord-twitter-video-embeds).
+As of June 30th, 2023, Twitter has made the decision to require users to log in to access the site. This breaks 3rd party clients such as ~~[Nitter](https://nitter.net/)~~ [Update: things are very inconsistent with nitter and it seems to depend on instance configuration. I'll have to look into it later] and embeds on many sites including with my [video embeds bot](https://github.com/adryd325/discord-twitter-video-embeds).
 
 The video embeds bot relied on Twitter's guest tokens, which are API tokens that allow access to the site for logged out users. It allowed me to bypass dealing with official API keys and still access most of the API. It's also why the embeds bot had managed to survite twitter's move to paid API access. 
 
