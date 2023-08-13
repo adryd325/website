@@ -2,14 +2,7 @@
   font-family: Pretendard;
   font-weight: 45 920;
   font-display: swap;
-  src: url("/static/fonts/pretendard-variable.ttf");
-}
-
-@font-face {
-  font-family: Playfair;
-  font-weight: 400 900;
-  font-display: swap;
-  src: url("/static/fonts/playfair-variable.ttf");
+  src: url("/static/fonts/PretendardStdVariable.woff2");
 }
 
 @font-face {
