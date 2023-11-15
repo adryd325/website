@@ -188,10 +188,10 @@ function neko() {
     var diffY = nekoPosY - mousePosY;
     var distance = Math.sqrt(Math.pow(diffX, 2) + Math.pow(diffY, 2));
 
-    if ((distance < 48 && idleTime > 1) || distance == 0) {
-      idle();
-      return;
-    }
+    if (distance < nekoSpeed || distance < 48) {
+		idle();
+		return;
+	}
 
     idleAnimation = null;
     idleAnimationFrame = 0;
