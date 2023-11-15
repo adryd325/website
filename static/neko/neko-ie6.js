@@ -225,8 +225,8 @@ function neko() {
       nekoPosY = mousePosY;
     }
 
-    // nekoPosX = Math.min(Math.max(16, nekoPosX), window.innerWidth - 16);
-    // nekoPosY = Math.min(Math.max(16, nekoPosY), window.innerHeight - 16);
+    nekoPosX = Math.min(Math.max(16, nekoPosX), document.getElementsByTagName("body")[0].clientWidth - 16);
+    nekoPosY = Math.min(Math.max(16, nekoPosY), document.getElementsByTagName("body")[0].clientHeight - 16);
 
     nekoEl.style.left = nekoPosX - 16 + "px";
     nekoEl.style.top = nekoPosY - 16 + "px";
