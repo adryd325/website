@@ -61,7 +61,7 @@ function neko() {
 		nekoEl.ariaHidden = true;
 		nekoEl.style.width = '32px';
 		nekoEl.style.height = '32px';
-		nekoEl.style.position = 'fixed';
+		nekoEl.style.position = 'absolute';
 		nekoEl.style.pointerEvents = "none";
 		nekoEl.style.backgroundImage = "url('/static/neko/neko.gif')";
 		nekoEl.style.imageRendering = 'pixelated';
