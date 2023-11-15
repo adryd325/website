@@ -183,7 +183,7 @@ function neko() {
   }
 
   function frame() {
-    frameCount += 1;
+    frameCount = frameCount + 1;
     var diffX = nekoPosX - mousePosX;
     var diffY = nekoPosY - mousePosY;
     var distance = Math.sqrt(Math.pow(diffX, 2) + Math.pow(diffY, 2));
