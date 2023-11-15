@@ -1,22 +1,44 @@
 function neko() {
   var nekoEl = document.createElement("div");
-  var nekoPosX = 48;
-  var nekoPosY = 48;
-  var mousePosX = 32;
-  var mousePosY = 32;
+
+  let nekoPosX = 32;
+  let nekoPosY = 32;
+
+  let mousePosX = 0;
+  let mousePosY = 0;
+
   var frameCount = 0;
   var idleTime = 0;
   var idleAnimation = null;
   var idleAnimationFrame = 0;
-  var nekoSpeed = 10;
   var direction;
+
   var IE = document.all ? true : false;
+
+  var nekoSpeed = 10;
   var spriteSets = {
     idle: [[-3, -3]],
     alert: [[-7, -3]],
-    scratch: [
+    scratchSelf: [
       [-5, 0],
       [-6, 0],
+      [-7, 0],
+    ],
+    scratchWallN: [
+      [0, 0],
+      [0, -1],
+    ],
+    scratchWallS: [
+      [-7, -1],
+      [-6, -2],
+    ],
+    scratchWallE: [
+      [-2, -2],
+      [-2, -3],
+    ],
+    scratchWallW: [
+      [-4, 0],
+      [-4, -1],
     ],
     tired: [[-3, -2]],
     sleeping: [
@@ -56,17 +78,18 @@ function neko() {
       [-1, -1],
     ],
   };
-  function create() {
+  function init() {
     nekoEl.id = "oneko";
-    nekoEl.ariaHidden = true;
+	nekoEl.ariaHidden = true;
     nekoEl.style.width = "32px";
     nekoEl.style.height = "32px";
     nekoEl.style.position = "absolute";
     nekoEl.style.pointerEvents = "none";
     nekoEl.style.backgroundImage = "url('/static/neko/neko.gif')";
     nekoEl.style.imageRendering = "pixelated";
-    nekoEl.style.left = "32px";
-    nekoEl.style.top = "32px";
+    nekoEl.style.left = nekoPosX - 16 + "px";
+    nekoEl.style.top = nekoPosY - 16 + "px";
+    nekoEl.style.zIndex = Number.MAX_VALUE;
 
     document.body.appendChild(nekoEl);
     function mousePos(event) {
@@ -103,6 +126,62 @@ function neko() {
     idleAnimationFrame = 0;
   }
 
+  function idle() {
+    idleTime = idleTime + 1;
+
+    // every ~ 20 seconds
+    if (
+      idleTime > 10 &&
+      Math.floor(Math.random() * 200) == 0 &&
+      idleAnimation == null
+    ) {
+      var avalibleIdleAnimations = ["sleeping", "scratchSelf"];
+      if (nekoPosX < 32) {
+        avalibleIdleAnimations.push("scratchWallW");
+      }
+      if (nekoPosY < 32) {
+        avalibleIdleAnimations.push("scratchWallN");
+      }
+      if (nekoPosX > window.innerWidth - 32) {
+        avalibleIdleAnimations.push("scratchWallE");
+      }
+      if (nekoPosY > window.innerHeight - 32) {
+        avalibleIdleAnimations.push("scratchWallS");
+      }
+      idleAnimation =
+        avalibleIdleAnimations[
+          Math.floor(Math.random() * avalibleIdleAnimations.length)
+        ];
+    }
+
+    switch (idleAnimation) {
+      case "sleeping":
+        if (idleAnimationFrame < 8) {
+          setSprite("tired", 0);
+          break;
+        }
+        setSprite("sleeping", Math.floor(idleAnimationFrame / 4));
+        if (idleAnimationFrame > 192) {
+          resetIdleAnimation();
+        }
+        break;
+      case "scratchWallN":
+      case "scratchWallS":
+      case "scratchWallE":
+      case "scratchWallW":
+      case "scratchSelf":
+        setSprite(idleAnimation, idleAnimationFrame);
+        if (idleAnimationFrame > 9) {
+          resetIdleAnimation();
+        }
+        break;
+      default:
+        setSprite("idle", 0);
+        return;
+    }
+    idleAnimationFrame = idleAnimationFrame + 1;
+  }
+
   function frame() {
     frameCount += 1;
     var diffX = nekoPosX - mousePosX;
@@ -110,39 +189,7 @@ function neko() {
     var distance = Math.sqrt(Math.pow(diffX, 2) + Math.pow(diffY, 2));
 
     if ((distance < 48 && idleTime > 1) || distance == 0) {
-      idleTime = idleTime + 1;
-
-      // every ~ 10 seconds
-      if (
-        idleTime > 10 &&
-        Math.floor(Math.random() * 100) == 0 &&
-        idleAnimation == null
-      ) {
-        idleAnimation = ["sleeping", "scratch"][Math.floor(Math.random() * 2)];
-      }
-
-      switch (idleAnimation) {
-        case "sleeping":
-          if (idleAnimationFrame < 8) {
-            setSprite("tired", 0);
-            break;
-          }
-          setSprite("sleeping", Math.floor(idleAnimationFrame / 4));
-          if (idleAnimationFrame > 192) {
-            resetIdleAnimation();
-          }
-          break;
-        case "scratch":
-          setSprite("scratch", idleAnimationFrame);
-          if (idleAnimationFrame > 9) {
-            resetIdleAnimation();
-          }
-          break;
-        default:
-          setSprite("idle", 0);
-          return;
-      }
-      idleAnimationFrame = idleAnimationFrame + 1;
+      idle();
       return;
     }
 
@@ -156,8 +203,8 @@ function neko() {
       idleTime = idleTime - 1;
       return;
     }
-    direction = "";
 
+    direction = "";
     if (diffY / distance > 0.5) {
       direction = "N";
     } else if (diffY / distance < -0.5) {
@@ -178,9 +225,12 @@ function neko() {
       nekoPosY = mousePosY;
     }
 
+    nekoPosX = Math.min(Math.max(16, nekoPosX), window.innerWidth - 16);
+    nekoPosY = Math.min(Math.max(16, nekoPosY), window.innerHeight - 16);
+
     nekoEl.style.left = nekoPosX - 16 + "px";
     nekoEl.style.top = nekoPosY - 16 + "px";
   }
-  create();
+  init();
 }
 neko();
