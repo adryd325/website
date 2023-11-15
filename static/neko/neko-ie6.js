@@ -1,11 +1,11 @@
 function neko() {
   var nekoEl = document.createElement("div");
 
-  let nekoPosX = 32;
-  let nekoPosY = 32;
+  var nekoPosX = 32;
+  var nekoPosY = 32;
 
-  let mousePosX = 0;
-  let mousePosY = 0;
+  var mousePosX = 0;
+  var mousePosY = 0;
 
   var frameCount = 0;
   var idleTime = 0;
