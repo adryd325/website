@@ -38,6 +38,10 @@
         ornaments.splice(index, 1);
       }
       document.getElementById("ornaments").innerText = arr.join(" ");
+
+      (window.webpackChunkwpToolsDetect = []).push = () => {
+        console.log("Hello wpTools user <3");
+      }
     </script>
   </body>
 </html>
