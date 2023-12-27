@@ -16,6 +16,8 @@ subtitle: >-
   }
 </style>
 
+<h2>this was not meant to be published, i committed too early oops</h2>
+
 Most of the text rendering we see today is anti-aliased. Anti-aliasing helps text appear smoother and takes advantage of the same effect that allows us to not see pixels on our screens. This effect breaks down when zooming in, and can cause text to appear blurry.
 
 When creating pixel art, or pixel-art like art, it's important to use aliased fonts, as our work is often scaled beyond its normal resolution.
