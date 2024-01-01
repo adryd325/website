@@ -183,6 +183,13 @@ pre {
   font-size: 0.85em;
 }
 
+.light {
+  display: block;
+}
+.dark {
+  display: none;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     color: #e5e5e5;
@@ -215,6 +222,13 @@ pre {
   .subtle-link:hover {
     color: currentColor;
     background-color: #91c3fd33;
+  }
+
+  .dark {
+    display: block;
+  }
+  .light{ 
+    display: none;
   }
 }
 @media (prefers-contrast: more) {

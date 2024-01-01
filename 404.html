@@ -8,15 +8,18 @@ description: page not available
 <style>
   img {
     max-width: 90vw;
+    image-rendering: pixelated;
   }
 </style>
 
 <div class="container">
-  <img src="/static/sky_night.png" />
+  <img class="dark" src="/static/sky_night.png" />
+  <img class="light" src="/static/sky_day.png" />
   <center>
     <h1 style="font-size: 12em">404</h1>
     <p class="subtitle">the page you requested is unavailable.</p>
     <p>{% include nav.html %}</p>
   </center>
-  <img src="/static/ground_night.png" />
+  <img class="dark" src="/static/ground_night.png" />
+  <img class="light" src="/static/ground_day.png" />
 </div>
