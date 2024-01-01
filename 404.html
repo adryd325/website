@@ -5,12 +5,18 @@ title: 'error {{placeholder "http.error.status_code"}}'
 description: page not available
 ---
 
+<style>
+  img {
+    max-width: 90vw;
+  }
+</style>
+
 <div class="container">
-<center>
-  <h1 style="font-size: 12em">404</h1>
-  <p class="subtitle">
-    the page you requested is unavailable.
-  </p>
-  <p>{% include nav.html %}</p>
-</center>
+  <img src="/static/sky_night.png" />
+  <center>
+    <h1 style="font-size: 12em">404</h1>
+    <p class="subtitle">the page you requested is unavailable.</p>
+    <p>{% include nav.html %}</p>
+  </center>
+  <img src="/static/ground_night.png" />
 </div>

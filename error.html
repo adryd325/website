@@ -5,17 +5,23 @@ title: 'error {{placeholder "http.error.status_code"}}'
 description: page not available
 ---
 
+<style>
+  img {
+    max-width: 90vw;
+  }
+</style>
+
 <div class="container">
-<center>
-  <h1 style="font-size: 12em">{% raw %}{{placeholder "http.error.status_code"}}{% endraw %}</h1>
-  <p class="subtitle">
-    the page you requested is unavailable.
-  </p>
-  <p>
-    <a class="fancy-link" href="//adryd.com">home →</a>
-    <a class="fancy-link" href="//adryd.com/blog">blog →</a>
-    <a class="fancy-link" href="//adryd.com/projects">projects →</a>
-    <a class="fancy-link" href="//adryd.co/public">files →</a>
-  </p>
-</center>
+  <img src="/static/sky_night.png" />
+  <center>
+    <h1 style="font-size: 12em">
+      {% raw %}{{placeholder "http.error.status_code"}}{% endraw %}
+    </h1>
+    <p class="subtitle">the page you requested is unavailable.</p>
+    <p>
+      <a class="fancy-link" href="//adryd.com">home →</a>
+      <a class="fancy-link" href="//adryd.co/public">files →</a>
+    </p>
+  </center>
+  <img src="/static/ground_night.png" />
 </div>

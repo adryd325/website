@@ -26,7 +26,8 @@
     "maia.crimew.gay",
     "spookyghost.zone",
     "noelle.df1.dev",
-    "kibty.town"
+    "www.kibty.town",
+    "kibty.town",
   ];
   
   try {

@@ -27,7 +27,7 @@ title: twitter embeds
     background-color: #fdfdfd;
     color: #262626;
     height: auto;
-    padding: 1rem 1.5rem 1.5rem 0;
+    padding: 0 1.5rem 1.5rem 0;
     min-height: calc(100vh - 222px);
   }
 
@@ -55,7 +55,7 @@ title: twitter embeds
 
   @media only screen and (max-width: 1080px) {
     .page {margin: 24px 0 0 0;
-      padding: 1.5rem 1.5rem 1.5rem 1.5rem;}
+      padding: 0 1.5rem 1.5rem 1.5rem;}
   }
 
   @media (prefers-color-scheme: dark) {
@@ -86,7 +86,10 @@ title: twitter embeds
 
 <div class="page">
   <div class="container">
-    {% include nav.html %}
+    <!-- Hack cause of page element margin-->
+    <div style="display: flex; margin-bottom: -1.5em;">
+      {% include nav.html %}
+    </div>
     <h1>Twitter Embeds</h1>
     <p class="subtitle">Twitter Embeds fixes embeds from Twitter, TikTok and Reddit on Discord
     with a goal of convinience, seamlessness, and feature-completeness. It
