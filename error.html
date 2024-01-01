@@ -8,11 +8,13 @@ description: page not available
 <style>
   img {
     max-width: 90vw;
+    image-rendering: pixelated;
   }
 </style>
 
 <div class="container">
-  <img src="/static/sky_night.png" />
+  <img class="dark" src="/static/sky_night.png" />
+  <img class="light" src="/static/sky_day.png" />
   <center>
     <h1 style="font-size: 12em">
       {% raw %}{{placeholder "http.error.status_code"}}{% endraw %}
@@ -23,5 +25,6 @@ description: page not available
       <a class="fancy-link" href="//adryd.co/public">files →</a>
     </p>
   </center>
-  <img src="/static/ground_night.png" />
+  <img class="dark" src="/static/ground_night.png" />
+  <img class="light" src="/static/ground_day.png" />
 </div>
