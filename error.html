@@ -5,15 +5,8 @@ title: 'error {{placeholder "http.error.status_code"}}'
 description: page not available
 ---
 
-<style>
-  img {
-    max-width: 90vw;
-  }
-</style>
-
 <div class="container">
-  <img class="dark" src="/static/sky_night.png" />
-  <img class="light" src="/static/sky_day.png" />
+  {% include sky.svg %}
   <center>
     <h1 style="font-size: 12em">
       {% raw %}{{placeholder "http.error.status_code"}}{% endraw %}
@@ -24,6 +17,6 @@ description: page not available
       <a class="fancy-link" href="//adryd.co/public">files →</a>
     </p>
   </center>
-  <img class="dark" src="/static/ground_night.png" />
-  <img class="light" src="/static/ground_day.png" />
+  {% include ground.svg %}
+
 </div>

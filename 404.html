@@ -1,24 +1,21 @@
 ---
-permalink: /404.html
 layout: main
-title: 'error {{placeholder "http.error.status_code"}}'
+title: 'error 404'
 description: page not available
 ---
 
-<style>
-  img {
-    max-width: 90vw;
-  }
-</style>
-
 <div class="container">
-  <img class="dark" src="/static/sky_night.png" />
-  <img class="light" src="/static/sky_day.png" />
+  {% include sky.svg %}
   <center>
-    <h1 style="font-size: 12em">404</h1>
+    <h1 style="font-size: 10em">
+      404
+    </h1>
     <p class="subtitle">the page you requested is unavailable.</p>
-    <p>{% include nav.html %}</p>
+    <p>
+      <a class="fancy-link" href="//adryd.com">home →</a>
+      <a class="fancy-link" href="//adryd.co/public">files →</a>
+    </p>
   </center>
-  <img class="dark" src="/static/ground_night.png" />
-  <img class="light" src="/static/ground_day.png" />
+  {% include ground.svg %}
+
 </div>
