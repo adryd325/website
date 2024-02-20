@@ -22,7 +22,7 @@ title: adryd
 email: me@adryd.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://adryd.com" # the base hostname & protocol for your site, e.g. http://example.com
-permalink: "blog/:title/"
+permalink: "pages/:title/"
 date_format: "%B %-d, %Y"
 
 # Build settings
