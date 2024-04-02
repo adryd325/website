@@ -5,10 +5,10 @@ layout: post
 draft: true
 image: /static/pages/making-my-radio-into-a-pager-embed.jpg
 excerpt: >-
-  Something I've loved about handheld radios and old phones compared to our modern phones is their durability. I feel like I could drop my radio off a cliff and it would still work, where carrying a modern cellphone without a case feels like carrying an egg. 
+  Something I've loved about handheld radios and old phones compared to our modern phones is their durability. I feel like I could drop my radio off a cliff and it would still work, where carrying a modern cellphone without a case feels like carrying an egg...
 
 description: >-
-  Something I've loved about handheld radios and old phones compared to our modern phones is their durability. I feel like I could drop my radio off a cliff and it would still work, where carrying a modern cellphone without a case feels like carrying an egg. 
+  Something I've loved about handheld radios and old phones compared to our modern phones is their durability. I feel like I could drop my radio off a cliff and it would still work, where carrying a modern cellphone without a case feels like carrying an egg...
 
 ---
 
