@@ -2,7 +2,6 @@
 title: Making my radio into a two way pager
 date: "2024-04-02"
 layout: post
-draft: true
 image: /static/pages/making-my-radio-into-a-pager-embed.jpg
 excerpt: >-
   Something I've loved about handheld radios and old phones compared to our modern phones is their durability. I feel like I could drop my radio off a cliff and it would still work, where carrying a modern cellphone without a case feels like carrying an egg...
