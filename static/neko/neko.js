@@ -17,20 +17,9 @@
     return;
   }
 
+  // please use data-neko="true" on your A elements that link to another site with oneko-webring.js instead of this
   const nekoSites = [
-    "adryd.com",
     "localhost",
-    "c7.pm",
-    "fade.nya.rest",
-    "fleepy.tv",
-    "maia.crimew.gay",
-    "spookyghost.zone",
-    "noelle.df1.dev",
-    "www.kibty.town",
-    "kibty.town",
-    "avasilver.dev",
-    "tris.fyi",
-    "breq.dev"
   ];
   
   try {
@@ -51,7 +40,7 @@
     console.error("oneko.js: failed to parse query params.");
     console.error(e);
   }
-  
+
   function onClick(event) {
     let target;
     if (event.target.tagName === "A" && event.target.getAttribute("href")) {
@@ -68,17 +57,20 @@
     let newLocation;
     try {
       newLocation = new URL(target.href);
-    } catch (e) {;
+    } catch (e) {
       return;
     }
-    if (!nekoSites.includes(newLocation.host) || newLocation.pathname != "/")
-      return;
-    newLocation.searchParams.append("catx", Math.floor(nekoPosX));
-    newLocation.searchParams.append("caty", Math.floor(nekoPosY));
-    newLocation.searchParams.append("catdx", Math.floor(mousePosX));
-    newLocation.searchParams.append("catdy", Math.floor(mousePosY));
-    event.preventDefault();
-    window.location.href = newLocation.toString();
+    if (
+      (nekoSites.includes(newLocation.host) && newLocation.pathname == "/") ||
+      target.dataset.neko
+    ) {
+      newLocation.searchParams.append("catx", Math.floor(nekoPosX));
+      newLocation.searchParams.append("caty", Math.floor(nekoPosY));
+      newLocation.searchParams.append("catdx", Math.floor(mousePosX));
+      newLocation.searchParams.append("catdy", Math.floor(mousePosY));
+      event.preventDefault();
+      window.location.href = newLocation.toString();
+    }
   }
   document.addEventListener("click", onClick);
 
@@ -170,7 +162,7 @@
       mousePosX = event.clientX;
       mousePosY = event.clientY;
     });
-    
+
     window.requestAnimationFrame(onAnimatonFrame);
   }
 
@@ -181,9 +173,9 @@
       lastFrameTimestamp = timestamp;
     }
     if (timestamp - lastFrameTimestamp > 100) {
-      lastFrameTimestamp = timestamp
-      frame()
-    } 
+      lastFrameTimestamp = timestamp;
+      frame();
+    }
 
     window.requestAnimationFrame(onAnimatonFrame);
   }
