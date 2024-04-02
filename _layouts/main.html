@@ -23,8 +23,8 @@
     <meta name="twitter:site" content="@_adryd" />
     {% if page.image %}
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://{{ site.url }}{{ page.image }}">
-    <meta name="og:image" content="https://{{ site.url }}{{ page.image }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+    <meta name="og:image" content="{{ site.url }}{{ page.image }}">
     {% else %}
     <meta name="twitter:card" content="summary" />
     {% endif %}
