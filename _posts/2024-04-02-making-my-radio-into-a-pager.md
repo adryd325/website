@@ -1,5 +1,5 @@
 ---
-title: Making my radio into a two way pager
+title: Making my radio into a two way pager (draft)
 date: "2024-04-02"
 layout: post
 excerpt: >-
