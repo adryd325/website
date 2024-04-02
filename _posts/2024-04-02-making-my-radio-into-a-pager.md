@@ -83,6 +83,8 @@ Channel Settings
 <br>
 Right now this setup is incredibly clunky. Ideally in the future I would write a new DMR server soley for handling SMS, as HBnet is very cluttered. A drop in component for DMR servers for handling APRS, Bridging to DAPNET and other text message and data services would be an ideal future goal. Perhaps I'll consult with Brandmeister to get an ID assigned for my text message service, and build upon it to allow others to use it.
 
+I eventually plan to publish the changes I made to HBnet, however It's quite a mess and am unhappy with code quality because of having to work with HBnet's existing messy codebase.
+
 Perhaps a fun future exploration in playing with DMR would be to [use the protocol to carry general IP traffic.](https://www.youtube.com/watch?v=Rs6NRC6L3xw) A friend and I have joked about making BGP announcements over DMR, or attempting to play [Minecraft using RakNet](https://modrinth.com/plugin/raknetify) over DMR. The easiest way to do this would be to buy a second Motorola radio and use their USB ethernet driver to connect two computers, but I think it would be more fun to try implement a network interface using the Home Brew DMR protocol. 
 
 All these fun ideas aside, I'm about to resume a larger project to jailbreak a TETRA radio now that the radio has been shipped. A group of friends have been researching the firmware on the radio (It runs Linux!) and are planning to exploit CVE-2022-26941 to get a shell and see what we can do.
