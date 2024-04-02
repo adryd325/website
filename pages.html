@@ -18,6 +18,7 @@ layout: main
   <ul class="post-list">
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     {%- for post in site.posts -%}
+    {%- unless post.draft %}
     <li>
       <p>
       <h3><a class="subtle-link" href="{{ post.url }}">{{ post.title | escape }} →</a>
@@ -26,6 +27,7 @@ layout: main
       {{ post.excerpt | escape }}
       </p>
     </li>
+    {%- endunless %}
     {%- endfor -%}
   </ul>
   {%- else -%}
