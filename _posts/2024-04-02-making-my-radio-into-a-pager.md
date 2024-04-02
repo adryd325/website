@@ -81,7 +81,7 @@ Channel Settings
   <source src="/static/pages/making-my-radio-into-a-pager-demo.mp4" type="video/mp4">
 </video>
 <br>
-Right now this setup is incredibly clunky. Ideally in the future I would write a new DMR server soley for handling SMS, as HBnet is very cluttered. A drop in component for DMR servers for handling APRS, Bridging to DAPNET and other text message and data services would be an ideal future goal. Perhaps I'll consult with Brandmeister to get an ID assigned for my text message service, and build upon it to allow others to use it.
+Right now this setup is incredibly clunky. Ideally in the future I would write a new DMR server solely for handling SMS, as HBnet is very cluttered. A drop in component for DMR servers for handling APRS, Bridging to DAPNET and other text message and data services would be an ideal future goal. Perhaps I'll consult with Brandmeister to get an ID assigned for my text message service, and build upon it to allow others to use it.
 
 I eventually plan to publish the changes I made to HBnet, however It's quite a mess and am unhappy with code quality because of having to work with HBnet's existing messy codebase.
 
