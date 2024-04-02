@@ -7,18 +7,23 @@ excerpt: >-
 
 ---
 
-<style>
-  img {
-    max-width: 50%
-  }
-</style>
-
 Something I've loved about handheld radios and old phones compared to our modern phones is their durability. I feel like I could drop my radio off a cliff and it would still work, where carrying a modern cellphone without a case feels like carrying an egg. 
 
-<div><img alt="Front photo of a Motorola XPR6550. The radio features a small monochrome LCD screen and a keypad" src=
-"/static//pages/making-my-radio-into-a-pager-xpr6550-front.jpg" style="max-width: 50%"><img alt="Side photo of a Motorola XPR6550. Notably, the radio is bulky, about 4 centimeters thick including the battery" src="/static/pages/making-my-radio-into-a-pager-xpr6550-side.jpg" style="max-width: 50%"></div>
+<div 
+  style="border-radius: 15px; overflow:hidden; line-height:0"
+  ><img 
+    alt="Front photo of a Motorola XPR6550. The radio features a small monochrome LCD screen and a keypad" 
+    srcset="/static/pages/making-my-radio-into-a-pager-xpr6550-front-@1x.jpg, /static/pages/making-my-radio-into-a-pager-xpr6550-front-@2x.jpg 2x" 
+    src="/static/pages/making-my-radio-into-a-pager-xpr6550-front-@1x.jpg"
+    style="max-width: 50%"
+  ><img 
+    alt="Side photo of a Motorola XPR6550. Notably, the radio is bulky, about 4 centimeters thick including the battery"
+    srcset="/static/pages/making-my-radio-into-a-pager-xpr6550-side-@1x.jpg, /static/pages making-my-radio-into-a-pager-xpr6550-side-@2x.jpg 2x"
+    src="/static/pages/making-my-radio-into-a-pager-xpr6550-side-@1x.jpg" 
+    style="max-width: 50%"
+></div>
 
-
+<br>
 While waiting for the opportunity to buy a TETRA (TErestrial Trunked RAdio) for a larger project in the future, I bought a used Motorola XPR 6550 off ebay to play around with DMR (Digital Mobile Radio). DMR and TETRA are both digital radio protocols, allowing for more efficient use of bandwidth for voice communication, and provide additional data capabilities such as metadata, gps positons, text messages and IP traffic. The XPR 6550 is one of the oldest radios from Motorola's MOTOTRBO (DMR) line, having been released around 2007 (I cannot find an exact date), and they still work wonderfully. 
 
 I had already been interested in getting text messages working with my other DMR radio, A Retevis RT3S, however I use a custom firmware called [OpenGD77](https://opengd77.com) which does not support SMS because of implemetation difficulties and fear of patents. I bought my XPR 6550 in part because of its support for SMS, and I was hoping it would work out of the box; but unfortunately that was not the case.
@@ -39,7 +44,7 @@ To start off on the base station side of things, I wanted to create my own DMR n
 
 I'm using a pre-built image with MMDVMHost pre-installed, however I plan to move to using MMDVMHost on plain raspbian in the future, since the helper software in the image interferes with hosting other services on the same Pi. 
 
-I chose to build off of (HBnet)[https://github.com/kf7eel/hbnet]. An open source DMR "master" server that supports connecting to MMDVMHost. HBnet already had some support for Motorola's DMR SMS, however it had the wrong port and a different header format than I observed while decoding messages sent from my own radio. Unfortunately HBnet's data service is a cluttered mess of many components that should be split off and was difficult to work within that codebase. This would work fine for a proof of concept and to debug why I was having problems sending and receiving text messages on my radio.
+I chose to build off of [HBnet](https://github.com/kf7eel/hbnet). An open source DMR "master" server that supports connecting to MMDVMHost. HBnet already had some support for Motorola's DMR SMS, however it had the wrong port and a different header format than I observed while decoding messages sent from my own radio. Unfortunately HBnet's data service is a cluttered mess of many components that should be split off and was difficult to work within that codebase. This would work fine for a proof of concept and to debug why I was having problems sending and receiving text messages on my radio.
 
 The radio configuration took me the longest to figure out, because I had assumed I had done it right the first time. I was making tons of tweaks to HBnet in hopes I could get it to parse a message. The first issue I found was that my radio was sending "3/4 Rate data" or "trellis" as the error correction protocol. HBnet doesn't support 3/4 rate data, so I had to figure out how to get it to use 1/2 rate data. I had assumed at first that 1/2 rate data was a newer feature, but after some fiddling I found that disabling "Data Call Confirm" was the solution to my problem for my radio. Confirmed data appears to use a slightly different header format as well for the FEC layer (See ETSI TS 102 361-3 section 5.3 and 5.4 if you're interested in details).
 
@@ -55,7 +60,7 @@ Global settings:
 - General Settings -> TX Preamble Duration (ms): 1020 (radio wakeup preamble, only needs to be high if you plan on using scan lists. This could probably be set even lower, and should be set as low as possible on amateur networks to avoid congestion, as it hogs the channel sending garbage that entire duration)
 - Network -> CAI Network: 12 
 - Network -> Forward to PC: Disabled (when this is enabled, all packets are forwarded over usb, completely disabling text message parsing on the radio)
-- Network -> TMS Radio ID: (Consult your network, 9099 in my case)
+- Network -> TMS Radio ID: (Consult your network, 9099 for HBnet)
 - Network -> TMS UDP Port: 4007 
 
 Channel Settings
@@ -68,10 +73,10 @@ Channel Settings
 
 ## Demo and Closing thoughts
 
-<video style="max-width: 100%" controls>
+<video style="max-width: 100%; border-radius: 15px" controls>
   <source src="/static/pages/making-my-radio-into-a-pager-demo.mp4" type="video/mp4">
-  </video>
-
+</video>
+<br>
 Right now this setup is incredibly clunky. Ideally in the future I would write a new DMR server soley for handling SMS, as HBnet is very cluttered. A drop in component for DMR servers for handling APRS, Bridging to DAPNET and other text message and data services would be an ideal future goal. Perhaps I'll consult with Brandmeister to get an ID assigned for my text message service, and build uppon it to allow others to use it.
 
 Perhaps a fun future exploration in playing with DMR would be to [use the protocol to carry general IP traffic.](https://www.youtube.com/watch?v=Rs6NRC6L3xw) A friend and I have joked about making BGP announcements over DMR, or attempting to play [Minecraft using RakNet](https://modrinth.com/plugin/raknetify) over DMR. The easiest way to do this would be to buy a second Motorola radio and use their USB ethernet driver to connect two computers, but I think it would be more fun to try implement a network interface using the Home Brew DMR protocol. 
