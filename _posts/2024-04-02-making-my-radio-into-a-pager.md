@@ -22,7 +22,7 @@ Something I've loved about handheld radios and old phones compared to our modern
     style="max-width: 50%"
   ><img 
     alt="Side photo of a Motorola XPR6550. Notably, the radio is bulky, about 4 centimeters thick including the battery"
-    srcset="/static/pages/making-my-radio-into-a-pager-xpr6550-side-@1x.jpg, /static/pages making-my-radio-into-a-pager-xpr6550-side-@2x.jpg 2x"
+    srcset="/static/pages/making-my-radio-into-a-pager-xpr6550-side-@1x.jpg, /static/pages/making-my-radio-into-a-pager-xpr6550-side-@2x.jpg 2x" 
     src="/static/pages/making-my-radio-into-a-pager-xpr6550-side-@1x.jpg" 
     style="max-width: 50%"
 ></div>
