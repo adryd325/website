@@ -94,4 +94,5 @@ All these fun ideas aside, I'm about to resume a larger project to jailbreak a T
 Jonathan Naylor (G4KLX): Writing and maintaining MMDVMHost.<br>
 KF7EEL: Writing HBnet's data gateway service.<br>
 HBlink: The open source DMR server that HBnet is based on.<br>
+[Marisa Kirisame](https://marisakirisame.net): Getting me interested in playing with commercial DMR radios and listening to me complain when things didn't work<br>
 
