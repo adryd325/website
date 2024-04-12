@@ -35,10 +35,6 @@ subtitle: >-
     }
   }
 
-  .card:hover img {
-    animation: bump 0.5s;
-  }
-
   .card img {
     min-width: 64px;
     display: block;
@@ -166,3 +162,17 @@ subtitle: >-
     <div><p>NS VIRM</p></div>
   </div>
 </div>
+
+<script>
+  document.querySelectorAll(".card img").forEach((img) => {
+    img.addEventListener("mouseover", () => {
+      if (img.style.animation !== "bump 0.5s") {
+        img.style.animation = "bump 0.5s";
+      }
+    });
+
+    img.addEventListener("animationend", () => {
+      img.style.animation = "";
+    });
+  });
+</script>
