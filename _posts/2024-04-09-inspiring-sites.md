@@ -2,6 +2,9 @@
 title: "MicroBlogPost: Personal websites inspiration and notes"
 date: "2024-04-09"
 layout: post
+excerpt: >-
+  Notes about websites that inspire me and good practices when making websites
+
 ---
 
  - https://anhvn.com/ Has beautiful art, sorta like a comic strip? 
