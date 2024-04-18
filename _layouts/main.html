@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,30 +9,36 @@
     <!--[if IE]>
       <link rel="stylesheet" href="/static/compat.css" />
     <![endif]-->
-    <link rel="prefetch" as="font" href="/static/fonts/PretendardStdVariable.woff2" />
-    <link rel="preload" as="font" href="/static/fonts/PretendardStdVariable.woff2" />
+    <link
+      rel="prefetch"
+      as="font"
+      href="/static/fonts/PretendardStdVariable.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/static/fonts/PretendardStdVariable.woff2"
+    />
     <meta name="og:title" content="{{ page.title }} - adryd" />
-    <meta
-      name="description"
-      content="{{ page.description }}"
-    />
-    <meta
-      name="og:description"
-      content="{{ page.description }}"
-    />
+    <meta name="description" content="{{ page.description }}" />
+    <meta name="og:description" content="{{ page.description }}" />
     <meta name="twitter:site" content="@_adryd" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS Feed for adryd.com"
+      href="/feed.xml"
+    />
     {% if page.image %}
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
-    <meta name="og:image" content="{{ site.url }}{{ page.image }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
+    <meta name="og:image" content="{{ site.url }}{{ page.image }}" />
     {% else %}
     <meta name="twitter:card" content="summary" />
     {% endif %}
   </head>
   <body>
-    <main>
-        {{ content }}
-    </main>
+    <main>{{ content }}</main>
     {% include footer.html %}
     <script>
       var ornaments = "💫 ⭐ 🌟 ✨ 🌙 🌸 🌺".split(" ");
@@ -47,7 +53,7 @@
 
       (window.webpackChunkwpToolsDetect = []).push = () => {
         console.log("Hello wpTools user <3");
-      }
+      };
     </script>
   </body>
 </html>

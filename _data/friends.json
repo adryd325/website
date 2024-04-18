@@ -1,5 +1,9 @@
 [
-  { "href": "//sapphic.moe/", "88x31": "sapphic.png", "alt": "Sapphic Angels" },
+  {
+    "href": "//sapphic.moe/",
+    "88x31": "sapphic.png",
+    "alt": "Sapphic Angels"
+  },
   {
     "href": "//alula.me/",
     "88x31": "alula.png",
@@ -11,7 +15,11 @@
     "88x31": "ava.png",
     "alt": "ava"
   },
-  { "href": "//bree.dev", "88x31": "bree.png", "alt": "bree" },
+  {
+    "href": "//bree.dev",
+    "88x31": "bree.png",
+    "alt": "bree"
+  },
   {
     "href": "//breq.dev",
     "neko": true,
@@ -19,15 +27,33 @@
     "alt": "breq!",
     "magic": "Math.random()<0.05&&(this.src='/static/buttons/breq2.png')"
   },
-  { "href": "//c7.pm", "neko": true, "88x31": "c7-badge.png", "alt": "c7.pm" },
-  { "href": "//cbax.dev", "88x31": "cbax.gif", "alt": "cbax" },
+  {
+    "href": "//c7.pm",
+    "neko": true,
+    "88x31": "c7-badge.png",
+    "alt": "c7.pm"
+  },
+  {
+    "href": "//cbax.dev",
+    "88x31": "cbax.gif",
+    "alt": "cbax"
+  },
   {
     "href": "//coolmathgames.tech",
     "88x31": "mary.png",
     "alt": "Mary's House"
   },
-  { "href": "//espi.me", "88x31": "espi.png", "alt": "Espi" },
-  { "href": "//owo.me", "88x31": "erin.png", "alt": "e2.pm", "neko": true},
+  {
+    "href": "//espi.me",
+    "88x31": "espi.png",
+    "alt": "Espi"
+  },
+  {
+    "href": "//owo.me",
+    "88x31": "erin.png",
+    "alt": "e2.pm",
+    "neko": true
+  },
   {
     "href": "//fleepy.tv",
     "neko": true,
@@ -61,47 +87,108 @@
     "88x31": "notnite.png",
     "alt": "NetNite Navigator"
   },
-  { "href": "//philo.gay", "88x31": "philo.png", "alt": "philo" },
-  { "href": "//r74n.com", "88x31": "r74n.png", "alt": "r74n" },
-  { "href": "//slice.zone", "88x31": "skip.png", "alt": "gay men aren't real" },
-  { "href": "//slonk.ing", "88x31": "slonkazoid.apng", "alt": "slonk" },
+  {
+    "href": "//philo.gay",
+    "88x31": "philo.png",
+    "alt": "philo"
+  },
+  {
+    "href": "//r74n.com",
+    "88x31": "r74n.png",
+    "alt": "r74n"
+  },
+  {
+    "href": "//slice.zone",
+    "88x31": "skip.png",
+    "alt": "gay men aren't real"
+  },
+  {
+    "href": "//slonk.ing",
+    "88x31": "slonkazoid.apng",
+    "alt": "slonk"
+  },
   {
     "href": "//versary.town",
     "88x31": "versarytown.png",
     "alt": "versary town"
   },
-  { "href": "//www.vhafener.com", "88x31": "vivi.png", "alt": "Vivi" },
-  { "href": "//vin.pet", "88x31": "vin.png", "alt": "vin.pet" },
+  {
+    "href": "//www.vhafener.com",
+    "88x31": "vivi.png",
+    "alt": "Vivi"
+  },
+  {
+    "href": "//vin.pet",
+    "88x31": "vin.png",
+    "alt": "vin.pet"
+  },
   {
     "href": "//wavetable.cymru",
     "88x31": "oscar.gif",
     "alt": "wavetable.cymru"
   },
-  { "href": "//winter.cafe", "88x31": "winter.png", "alt": "Winter" },
+  {
+    "href": "//winter.cafe",
+    "88x31": "winter.png",
+    "alt": "Winter"
+  },
   {
     "href": "//juliaviolet.dev",
     "neko": true,
     "88x31": "julia.png",
     "alt": "Julia"
   },
-  { "href": "//miakizz.quest", "88x31": "mia.png", "alt": "Miakizz" },
-  { "href": "//prsmaticwolf.itch.io", "88x31": "maxine.png", "alt": "BigMax" },
-  { "href": "//tris.fyi", "neko": true, "88x31": "tris.png", "alt": "Tris" },
-  { "href": "//megu.dev", "88x31": "megu.png", "alt": "Megu" },
-  { "href": "//colepaws.pet", "88x31": "cole.png", "alt": "Cole Paws" },
+  {
+    "href": "//miakizz.quest",
+    "88x31": "mia.png",
+    "alt": "Miakizz"
+  },
+  {
+    "href": "//prsmaticwolf.itch.io",
+    "88x31": "maxine.png",
+    "alt": "BigMax"
+  },
+  {
+    "href": "//tris.fyi",
+    "neko": true,
+    "88x31": "tris.png",
+    "alt": "Tris"
+  },
+  {
+    "href": "//megu.dev",
+    "88x31": "megu.png",
+    "alt": "Megu"
+  },
+  {
+    "href": "//colepaws.pet",
+    "88x31": "cole.png",
+    "alt": "Cole Paws"
+  },
   {
     "href": "//meower.moe",
     "88x31": "gh.gif",
     "alt": "GIF OF A ROTATING FISH"
   },
-  { "href": "//l4.pm", "88x31": "lun4.gif", "alt": "lun-4" },
+  {
+    "href": "//l4.pm",
+    "88x31": "lun4.gif",
+    "alt": "lun-4"
+  },
   {
     "href": "//hl2.sh",
     "88x31": "jay.png",
     "alt": "cat staring at the viewer"
   },
-  { "href": "//shrecked.dev", "88x31": "shrecknt.png", "alt": "Shwecky" },
-  { "href": "//honbra.com", "88x31": "honbra.png", "alt": "H" },
+  {
+    "href": "//shrecked.dev",
+    "88x31": "shrecknt.png",
+    "alt": "Shwecky"
+  },
+  {
+    "href": "//honbra.com",
+    "88x31": "honbra.png",
+    "alt": "H"
+  },
   {
     "href": "//infernocomms.com",
     "88x31": "infernocomms.png",
@@ -120,15 +207,54 @@
     "alt": "eightyeightthirty.one",
     "order": 1
   },
-  { "href": "//n2.pm", "88x31": "notnet.png", "alt": "notnet", "order": 1 },
+  {
+    "href": "//n2.pm",
+    "88x31": "notnet.png",
+    "alt": "notnet",
+    "order": 1
+  },
   {
     "href": "//ssi.fyi",
     "88x31": "serverscanning.gif",
     "alt": "Server Scanning Inc",
     "order": 1
   },
-  { "href": "//ave.zone", "name": "ave" },
-  { "href": "//emma.cafe/", "name": "emma" },
-  { "href": "//jpegzilla.com/", "name": "jpegzilla" },
-  { "href": "//sdomi.pl", "name": "domi" }
+  {
+    "href": "//glauca.digital",
+    "88x31": "glauca.gif",
+    "alt": "glauca.digital: domains, hosting, dns",
+    "order": 1
+  },
+  {
+    "href": "//ezri.pet",
+    "88x31": "ezri.png",
+    "alt": "ezri.pet"
+  },
+  {
+    "href": "//damcraft.de",
+    "88x31": "dam.gif",
+    "alt": "DAM"
+  },
+  {
+    "href": "http://makea.fish",
+    "88x31": "makeafish.png",
+    "alt": "come back at 11:11",
+    "order": 1
+  },
+  {
+    "href": "//ave.zone",
+    "name": "ave"
+  },
+  {
+    "href": "//emma.cafe/",
+    "name": "emma"
+  },
+  {
+    "href": "//jpegzilla.com/",
+    "name": "jpegzilla"
+  },
+  {
+    "href": "//sdomi.pl",
+    "name": "domi"
+  }
 ]

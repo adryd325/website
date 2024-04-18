@@ -49,6 +49,8 @@ h5,
 h6 {
   line-height: 1.25;
   margin: 1.5rem 0 1rem;
+  word-break: break-word;
+  
 }
 
 h1 {
@@ -59,6 +61,7 @@ h1 {
   font-variation-settings: "opsz" 35;
   line-height: 1;
   margin: 1.5rem 0 1rem;
+  word-break: break-word;
 }
 
 h2 {
