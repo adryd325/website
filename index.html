@@ -13,6 +13,16 @@ title: home
   .inline-flex {
     display: inline-flex;
   }
+  .rss:hover {
+    color: #ea580c;
+    background-color: #fdba7444;    
+  }
+  @media (prefers-color-scheme: dark) {
+  .rss:hover {
+    color: #fb923c;
+    background-color: #fdba7433
+  }
+}
 </style>
 
 <div class="container">
@@ -49,6 +59,11 @@ title: home
           >Making my radio into a two way pager →</a
         >
       </li>
+      <li>
+        <a class="fancy-link rss" href="/feed.xml"
+          >RSS Feed +</a
+        >
+      </li>
     </ul>
   </section>
   <section>
@@ -72,6 +87,11 @@ title: home
           >the fediverse →</a
         >
       </li>
+      <!--<li>
+        <a class="fancy-link" rel="me" href="https://twitter.com/_adryd"
+          >twitter →</a
+        >
+      </li>-->
       <li>
         <a class="fancy-link" rel="me" href="https://github.com/adryd325"
           >github →</a

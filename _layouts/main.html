@@ -41,17 +41,7 @@
     <main>{{ content }}</main>
     {% include footer.html %}
     <script>
-      var ornaments = "💫 ⭐ 🌟 ✨ 🌙 🌸 🌺".split(" ");
-      var arr = [];
-      var index;
-      for (var i = 0; i < 4; i++) {
-        index = Math.floor(Math.random() * ornaments.length);
-        arr.push(ornaments[index]);
-        ornaments.splice(index, 1);
-      }
-      document.getElementById("ornaments").innerText = arr.join(" ");
-
-      (window.webpackChunkwpToolsDetect = []).push = () => {
+      (window.webpackChunk_webpackToolsDetect = []).push = () => {
         console.log("Hello wpTools user <3");
       };
     </script>
