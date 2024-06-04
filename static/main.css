@@ -125,6 +125,11 @@ footer {
   line-height: 1rem;
 }
 
+.bg {
+  background-color: #fdfdfd;
+  color: #262626;
+}
+
 .container {
   max-width: 980px;
   margin: 0 auto;
@@ -145,6 +150,16 @@ footer {
 .fancy-link:hover {
   color: #2563eb;
   background-color: #3b82f633;
+}
+
+.danger-fancy-link {
+  color: #9F1239;
+  background-color: #FCA5A555;
+}
+
+.danger-fancy-link:hover {
+  color: #ef4444;
+  background-color: #fecaca55;
 }
 
 .subtle-link {
@@ -208,6 +223,11 @@ pre {
     background-color: #090909;
   }
 
+  .bg {
+    color: #e5e5e5;
+    background-color: #050505;
+  }
+
   .fancy-link {
     color: #93c5fd;
     background-color: #3b82f633;
@@ -216,6 +236,16 @@ pre {
   .fancy-link:hover {
     color: #93c5fd;
     background-color: #91c3fd33;
+  }
+
+  .danger-fancy-link {
+    color: #ef4444;
+    background-color: #991b1b33;
+  }
+
+  .danger-fancy-link:hover {
+    color: #ef4444;
+    background-color: #dc262633;
   }
 
   .subtle-link {

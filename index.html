@@ -161,3 +161,12 @@ title: home
 <!--[if !IE]><!-->
 <script src="/static/neko/neko.js"></script>
 <!--<![endif]-->
+<script>
+  // Easter egg loader
+  const pageUrl = new URL(window.location.href)
+  if (pageUrl.searchParams.has("cookie")) {
+    const cookieScript = document.createElement("script")
+    cookieScript.src = "/static/cookie/cookie.js"
+    document.body.appendChild(cookieScript)
+  }
+</script>

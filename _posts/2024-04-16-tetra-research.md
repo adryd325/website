@@ -28,7 +28,7 @@ We then pivoted to looking at MTH800 and MTP850 radios due to their affordabilit
     <CPUTypeRecord CPUType="RED_CAP" ByteOrder="BigEndian" StartAddress="1073741824" PlatformList="4,3,2,1,5,6" ReleaseIDPtr="268501204"/>
     <CPUTypeRecord CPUType="OMAP" ByteOrder="LittleEndian" StartAddress="201326592" PlatformList="14" ReleaseIDPtr="201850944"/>
     <CPUTypeRecord CPUType="PATRIOT" ByteOrder="BigEndian" StartAddress="268435456" PlatformList="7,8,10,11,12,13,15,16,17,26,28,29,31" ReleaseIDPtr="268501204"/>
-    <CPUTypeRecord CPUType="FREON" ByteOrder="LittleEndian" StartAddress="16777216" PlatformList="27,33,34,35" ReleaseIDPtr="50331648"/>
+    <CPUTypeRecord CPUType="FREON" ByteOrder="LittleEndian" StartAddress="16777216" PlatformList="27,33,34,35,36,37,38,39" ReleaseIDPtr="50331648"/>
   </RecordsList>
 </XMLConfigOfCPUTypeRecord>
 ```
