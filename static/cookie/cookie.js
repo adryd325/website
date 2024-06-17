@@ -5,7 +5,6 @@ function cookieShower() {
 
   const cookieElements = new Set();
 
-  // Wow I am terrible at naming functions
   for (let i = 0; i < 20; i++) {
     const cookieEl = document.createElement("img");
     const x = Math.random() * window.innerWidth;
