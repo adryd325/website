@@ -100,6 +100,31 @@ code {
   font-family: "IBM Plex Mono", monospace;
 }
 
+/* taken from github.... maybe i should just copy most of my markdown stuff from github */
+table {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+table tr {
+  border-top: 1px solid #d0d7de
+}
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #d0d7de;
+  padding: 6px 13px;
+}
+
+
 .margin-even {
   margin: 1rem 0;
 }
@@ -262,6 +287,14 @@ pre {
   }
   .light{ 
     display: none;
+  }
+
+  table tr {
+    border-top: 1px solid #30363d;
+  }
+  
+  table th, table td {
+    border: 1px solid #30363d;
   }
 }
 @media (prefers-contrast: more) {

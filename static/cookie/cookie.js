@@ -1,12 +1,3 @@
-{
-  /* <div style="position: fixed;max-width: 450px;left: 24px;bottom: 24px;background: #fafafa;padding: 1.5em;box-shadow: ;border-radius: 12px;"><div class="container"><div><img src="https://em-content.zobj.net/thumbs/240/apple/325/cookie_1f36a.png" height="32px">
-  <img src="https://em-content.zobj.net/thumbs/240/apple/325/dog-face_1f436.png" height="32px">
-  </div><p style="margin: 0;">This website gives cookies to good girls to help track their good behaviour across the internet. We need your permission before giving you cookies.</p><div style="padding-top: 20px;padding-bottom: 6px;">
-  <a href="" class="fancy-link" style="padding: 12px 12px;margin-right: 6px;border-radius: 6px;">Accept</a>
-  <a href="" class="fancy-link" style="padding: 12px 12px;border-radius: 6px;color: #9F1239;background-color: #FCA5A555;">Bad girl! Don't Press</a>
-      </div></div></div> */
-}
-
 function cookieShower() {
   document.body.removeChild(rootDiv)
   const GRAVITY = 0.2;
@@ -46,7 +37,7 @@ function cookieShower() {
       el.cookieEl.style.left = el.x + "px";
       el.cookieEl.style.top = el.y + "px";
 
-      if (el.y > window.innerWidth) {
+      if (el.y > window.innerHeight) {
         cookieElements.delete(el);
         document.body.removeChild(el.cookieEl);
       }
@@ -119,7 +110,7 @@ declineButton.style.marginRight = "6px";
 declineButton.style.borderRadius = "6px";
 declineButton.style.cursor = "pointer";
 declineButton.innerText = "Only bad girls press this button";
-declineButton.onclick = () => {document.body.removeChild(rootDiv)}
+declineButton.onclick = cookieShower
 buttonBox.appendChild(declineButton);
 
 document.body.appendChild(rootDiv);
