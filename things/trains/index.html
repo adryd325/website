@@ -16,7 +16,7 @@ subtitle: >-
   .card {
     background-color: #f5f5f5;
     border-radius: 8px;
-    max-width: 128px;
+    max-width: calc(128px + 16px);
     margin-right: 8px;
     margin-top: 8px;
   }
@@ -37,18 +37,14 @@ subtitle: >-
   }
 
   .card img {
-    min-width: 64px;
+    min-width: 128px;
     margin: 8px;
     display: block;
   }
 
-  .card p {
-    margin: 8px;
-    font-weight: bold;
-  }
-
   .card div {
-    padding: 0 4px;
+    font-weight: bold;
+    margin: 12px;
   }
 
   .fancy-link {
@@ -76,22 +72,6 @@ subtitle: >-
       background-color: #84cc1633;
     }
   }
-
-  .big .card {
-    max-width: 256px;
-  }
-  .big .card img {
-    width: 128px;
-  }
-  .big .card p {
-    margin: 16px;
-    font-size: 1.2em;
-  }
-
-  #bigify {
-    font-size: 1.2em;
-    font-weight: bold;
-  }
 </style>
 <p>
   Original svgs can be downloaded from the
@@ -102,35 +82,44 @@ subtitle: >-
   Remember to pet the trains!
 </p>
 
-<a class="fancy-link" id="bigify" onclick="big()">big!</a>
-
-<h2>toronto</h2>
 <div class="row">
   <div class="card">
     <img
       alt="Bombardier BiLevel cab car in Toronto paint scheme"
       src="./bombardier_toronto_bilevel_coach.svg"
     />
-    <div><p>Bombardier BiLevel Cab</p></div>
+    <div><span style="font-size: 1.2em">Toronto</span><p>Bombardier BiLevel Cab</p></div>
   </div>
   <div class="card">
     <img alt="Bombardier T1" src="./bombardier_toronto_t1.svg" />
-    <div><p>Bombardier T1</p></div>
+    <div><span style="font-size: 1.2em">Toronto</span><p>Bombardier T1</p></div>
   </div>
   <div class="card">
     <img alt="Bombardier Toronto Rocket" src="./bombardier_toronto_tr.svg" />
-    <div><p>Bombardier Toronto Rocket</p></div>
+    <div><span style="font-size: 1.2em">Toronto</span><p>Bombardier Toronto Rocket</p></div>
   </div>
-</div>
-<h2>rochester</h2>
-<div class="row">
+  <div class="card">
+    <img alt="Train inspired by MBTA red line cars" src="./mbta_redline.svg" />
+    <div>
+      <span style="font-size: 1.2em">Boston</span>
+      <p>1600 Series Red Line</p>
+    </div>
+  </div>
+  <div class="card">
+    <img alt="Orange line MBTA train" src="./mbta_orange_line.svg" />
+    <div><span style="font-size: 1.2em">Boston</span><p>Hawker-Siddley Orange Line</p></div>
+  </div>
+  <div class="card">
+    <img alt="Type 7 MBTA green line train" src="./mbta_green_line2.svg" />
+    <div><span style="font-size: 1.2em">Boston</span><p>Type 7 Green Line</p></div>
+  </div>
   <div class="card">
     <img
       alt="Peter Witt car with New York intercity
       paint scheme"
       src="./peter_witt_rochester_forgor.svg"
     />
-    <div><p>Peter Witt Rochester Intercity</p></div>
+    <div><span style="font-size: 1.2em">Rochester</span><p>Peter Witt New York Intercity</p></div>
   </div>
   <div class="card">
     <img
@@ -139,55 +128,29 @@ subtitle: >-
       src="./peter_witt_rochester_car_60.svg"
     />
     <div>
-      <p>
-        Rochester Subway Car<br />
-        <small>(for you mary)</small>
-      </p>
+      <span style="font-size: 1.2em">Rochester</span>
+      <p>Rochester Subway Car</p>
     </div>
   </div>
-</div>
-<h2>boston</h2>
-<div class="row">
-  <div class="card">
-    <img alt="Train inspired by MBTA red line cars" src="./mbta_redline.svg" />
-    <div><p>MBTA 1600 Series</p></div>
-  </div>
-  <div class="card">
-    <img alt="Orange line MBTA train" src="./mbta_orange_line.svg" />
-    <div><p>Hawker-Siddley Orange Line train</p></div>
-  </div>
-  <div class="card">
-    <img alt="Type 7 MBTA green line train" src="./mbta_green_line2.svg" />
-    <div><p>MBTA Type 7 (Green Line)</p></div>
-  </div>
-</div>
-<h2>new york</h2>
-<div class="row">
   <div class="card">
     <img
       alt="Kawasaki Railcar Manufacturing NYC
         R211"
       src="./nyc_r211.svg"
     />
-    <div><p>NYC R211</p></div>
+    <div><span style="font-size: 1.2em">New York City</span><p>R211</p></div>
   </div>
-</div>
-<h2>montreal</h2>
-<div class="row">
   <div class="card">
     <img
       alt="Alstom Metropolis Saint-Laurent in the Montreal REM paint
         scheme"
       src="./montreal_rem.svg"
     />
-    <div><p>Alstom Metropolis Saint-Laurent</p></div>
+    <div><span style="font-size: 1.2em">Montreal</span><p>Alstom Metropolis Saint-Laurent</p></div>
   </div>
-</div>
-<h2>netherlands</h2>
-<div class="row">
   <div class="card">
     <img alt="NS VIRM" src="./ns_virm.svg" />
-    <div><p>NS VIRM</p></div>
+    <div><span style="font-size: 1.2em">The Netherlands</span><p>NS VIRM</p></div>
   </div>
 </div>
 
@@ -206,11 +169,11 @@ subtitle: >-
   const bigify = document.getElementById("bigify");
   function big() {
     if (!document.body.classList.contains("big")) {
-      document.body.classList.add("big")
-      bigify.innerText = "unbig!"
+      document.body.classList.add("big");
+      bigify.innerText = "unbig!";
     } else {
-    document.body.classList.remove("big")
-    bigify.innerText = "big!"
-  }
+      document.body.classList.remove("big");
+      bigify.innerText = "big!";
+    }
   }
 </script>
