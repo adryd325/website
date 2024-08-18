@@ -26,8 +26,6 @@ function cookieShower() {
 
   function onAnimationFrame() {
     cookieElements.forEach((el) => {
-      // el.velocityX -= AIR_RESISTANCE;
-      // el.velocityY -= AIR_RESISTANCE;
       el.velocityY += GRAVITY;
       el.velocityY = Math.min(el.velocityY, MAX_SPEED);
       el.velocityX = Math.min(el.velocityX, MAX_SPEED);
