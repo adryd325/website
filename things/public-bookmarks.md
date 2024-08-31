@@ -39,6 +39,17 @@ https://modern.ircdocs.horse/
 | https://www.seat61.com/      | Planning for long distance train travel |
 | https://www.atlasobscura.com | Obscure travel destinations             |
 
+## Transit
+
+| URL                          | Comment                                          |
+| ---------------------------- | ------------------------------------------------ |
+| https://asm.transitdocs.com/ | Realtime train positions for amtrak and via rail |
+| https://transsee.ca/         | Realtime bus and train positions for transit agencies, Especially verbose |
+| https://transitmatters.org   | Verbose transit data for the MBTA, see dashboard.transmitmatters.org or traintracker.transitmatters.org |
+| https://map.railfans.ca/     | Rail map of Canadian transit systems |
+| https://openrailwaymap.org/  | Rail map of the world |
+
+
 ## Osint
 
 | URL                      | Comment                                           |
