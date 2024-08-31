@@ -6,37 +6,39 @@ layout: container
 
 ## Really good articles
 
-| URL | Comment |
-| --- | --- |
-| https://ohshitgit.com/ | How to fix the git mess you caused |
+| URL                                       | Comment                                     |
+| ----------------------------------------- | ------------------------------------------- |
+| https://ohshitgit.com/                    | How to fix the git mess you caused          |
 | https://gekk.info/articles/traceroute.htm | Traceroute is a gross hack and how it works |
 
 ## Misc
-| URL | Comment |
-| --- | --- |
-| https://meow.camera/viewer/ | Cat cameras in China |
-| https://pastevents.org/ | "A structured, searchable archive of Wikipedia's "Current Events" portal" |
-| http://makea.fish/ |  Make a fish at 11:11  |
-| https://optifine.alternatives.lambdaurora.dev/ | Optifine alternatives |
-| https://cyberchef.org/ | Data transformation utility |
-| https://regex101.com/ | Interactive regex builder and tester |
-| https://17track.net/ | Centralized package tracking |
-| https://hamstudy.org/ | Study for your radio license |
+
+| URL                                            | Comment                                                                   |
+| ---------------------------------------------- | ------------------------------------------------------------------------- |
+| https://meow.camera/viewer/                    | Cat cameras in China                                                      |
+| https://pastevents.org/                        | "A structured, searchable archive of Wikipedia's "Current Events" portal" |
+| http://makea.fish/                             | Make a fish at 11:11                                                      |
+| https://optifine.alternatives.lambdaurora.dev/ | Optifine alternatives                                                     |
+| https://cyberchef.org/                         | Data transformation utility                                               |
+| https://regex101.com/                          | Interactive regex builder and tester                                      |
+| https://17track.net/                           | Centralized package tracking                                              |
+| https://hamstudy.org/                          | Study for your radio license                                              |
 
 ## Cyn's picks
-| URL | Comment |
-| --- | --- |
-| https://devdocs.io/                                       | Centralized programming documentation  |
-| https://r12a.github.io/app-conversion/                    | a |
+
+| URL                                                       | Comment                                                  |
+| --------------------------------------------------------- | -------------------------------------------------------- |
+| https://devdocs.io/                                       | Centralized programming documentation                    |
+| https://r12a.github.io/app-conversion/                    |                                                          |
 | https://www.magnumdb.com/                                 | Magic numbers database: Figure out what error codes mean |
-| https://qaz.wtf/u/convert.cgi                             | a |
-| https://benisland.neocities.org/petpet/                   | Create Petpet gifs |
-| https://ruyili.ca/image-splitter/                         | a |
-| https://misc.flogisoft.com/bash/tip_colors_and_formatting | Bash formatting and colors |
-| https://startup.retropc.se/                               | Software to get retro PC's working |
-| https://ruinirc99.firebaseapp.com/                        | a |
-| https://modern.ircdocs.horse/                             | IRC protocol documentation|
-| https://int10h.org/oldschool-pc-fonts/                    | Oldschool PC Fonts|
+| https://qaz.wtf/u/convert.cgi                             |                                                          |
+| https://benisland.neocities.org/petpet/                   | Create Petpet gifs                                       |
+| https://ruyili.ca/image-splitter/                         |                                                          |
+| https://misc.flogisoft.com/bash/tip_colors_and_formatting | Bash formatting and colors                               |
+| https://startup.retropc.se/                               | Software to get retro PC's working                       |
+| https://ruinirc99.firebaseapp.com/                        |                                                          |
+| https://modern.ircdocs.horse/                             | IRC protocol documentation                               |
+| https://int10h.org/oldschool-pc-fonts/                    | Oldschool PC Fonts                                       |
 
 ## Travel
 
@@ -47,14 +49,13 @@ layout: container
 
 ## Transit
 
-| URL                          | Comment                                          |
-| ---------------------------- | ------------------------------------------------ |
-| https://asm.transitdocs.com/ | Realtime train positions for amtrak and via rail |
-| https://transsee.ca/         | Realtime bus and train positions for transit agencies, Especially verbose |
+| URL                          | Comment                                                                                                 |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------- |
+| https://asm.transitdocs.com/ | Realtime train positions for amtrak and via rail                                                        |
+| https://transsee.ca/         | Realtime bus and train positions for transit agencies, Especially verbose                               |
 | https://transitmatters.org   | Verbose transit data for the MBTA, see dashboard.transmitmatters.org or traintracker.transitmatters.org |
-| https://map.railfans.ca/     | Rail map of Canadian transit systems |
-| https://openrailwaymap.org/  | Rail map of the world |
-
+| https://map.railfans.ca/     | Rail map of Canadian transit systems                                                                    |
+| https://openrailwaymap.org/  | Rail map of the world                                                                                   |
 
 ## Osint
 
