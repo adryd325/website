@@ -1,8 +1,7 @@
 ---
+title: Public bookmarks
 layout: container
 ---
-
-# My public bookmarks list
 
 ## Really good articles
 
