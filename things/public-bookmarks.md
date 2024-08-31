@@ -8,7 +8,7 @@ layout: container
 
 | URL | Comment |
 | --- | --- |
-| https://ohshitgit.com/ |  How to fix the git mess you caused |
+| https://ohshitgit.com/ | How to fix the git mess you caused |
 | https://gekk.info/articles/traceroute.htm | Traceroute is a gross hack and how it works |
 
 ## Misc
@@ -26,17 +26,17 @@ layout: container
 ## Cyn's picks
 | URL | Comment |
 | --- | --- |
-| https://devdocs.io/ | Centralized programming documentation  |
-| https://r12a.github.io/app-conversion/ | |
-| https://www.magnumdb.com/ | Magic numbers database: Figure out what error codes mean |
-| https://qaz.wtf/u/convert.cgi | |
-| https://benisland.neocities.org/petpet/ | Create Petpet gifs |
-| https://ruyili.ca/image-splitter/ | |
-| https://misc.flogisoft.com/bash/tip_colors_and_formatting | |
-| https://startup.retropc.se/ | Software to get retro PC's working | |
-| https://ruinirc99.firebaseapp.com/  | |
-| https://modern.ircdocs.horse/ | |
-| https://int10h.org/oldschool-pc-fonts/ | |
+| https://devdocs.io/                                       | Centralized programming documentation  |
+| https://r12a.github.io/app-conversion/                    | a |
+| https://www.magnumdb.com/                                 | Magic numbers database: Figure out what error codes mean |
+| https://qaz.wtf/u/convert.cgi                             | a |
+| https://benisland.neocities.org/petpet/                   | Create Petpet gifs |
+| https://ruyili.ca/image-splitter/                         | a |
+| https://misc.flogisoft.com/bash/tip_colors_and_formatting | Bash formatting and colors |
+| https://startup.retropc.se/                               | Software to get retro PC's working |
+| https://ruinirc99.firebaseapp.com/                        | a |
+| https://modern.ircdocs.horse/                             | IRC protocol documentation|
+| https://int10h.org/oldschool-pc-fonts/                    | Oldschool PC Fonts|
 
 ## Travel
 
