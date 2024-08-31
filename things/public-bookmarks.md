@@ -6,31 +6,37 @@ layout: container
 
 ## Really good articles
 
-https://ohshitgit.com/ How to fix the git mess you caused  
-https://gekk.info/articles/traceroute.htm Traceroute is a gross hack and how it works
+| URL | Comment |
+| --- | --- |
+| https://ohshitgit.com/ |  How to fix the git mess you caused |
+| https://gekk.info/articles/traceroute.htm | Traceroute is a gross hack and how it works |
 
 ## Misc
-
-https://meow.camera/viewer/ Cat cameras in China  
-https://pastevents.org/ "A structured, searchable archive of Wikipedia's "Current Events" portal"  
-http://makea.fish/ Make a fish at 11:11  
-https://optifine.alternatives.lambdaurora.dev/ Optifine alternatives  
-https://cyberchef.org/ Data transformation utility  
-https://regex101.com/ Interactive regex builder and tester  
-https://17track.net/ Centralized package tracking
+| URL | Comment |
+| --- | --- |
+| https://meow.camera/viewer/ | Cat cameras in China |
+| https://pastevents.org/ | "A structured, searchable archive of Wikipedia's "Current Events" portal" |
+| http://makea.fish/ |  Make a fish at 11:11  |
+| https://optifine.alternatives.lambdaurora.dev/ | Optifine alternatives |
+| https://cyberchef.org/ | Data transformation utility |
+| https://regex101.com/ | Interactive regex builder and tester |
+| https://17track.net/ | Centralized package tracking |
+| https://hamstudy.org/ | Study for your radio license |
 
 ## Cyn's picks
-
-https://devdocs.io/ Centralized programming documentation  
-https://r12a.github.io/app-conversion/  
-https://www.magnumdb.com/ Magic numbers database: Figure out what error codes mean  
-https://qaz.wtf/u/convert.cgi  
-https://benisland.neocities.org/petpet/ Create Petpet gifs  
-https://ruyili.ca/image-splitter/  
-https://misc.flogisoft.com/bash/tip_colors_and_formatting  
-https://startup.retropc.se/ Software to get retro PC's working  
-https://ruinirc99.firebaseapp.com/  
-https://modern.ircdocs.horse/
+| URL | Comment |
+| --- | --- |
+| https://devdocs.io/ | Centralized programming documentation  |
+| https://r12a.github.io/app-conversion/ | |
+| https://www.magnumdb.com/ | Magic numbers database: Figure out what error codes mean |
+| https://qaz.wtf/u/convert.cgi | |
+| https://benisland.neocities.org/petpet/ | Create Petpet gifs |
+| https://ruyili.ca/image-splitter/ | |
+| https://misc.flogisoft.com/bash/tip_colors_and_formatting | |
+| https://startup.retropc.se/ | Software to get retro PC's working | |
+| https://ruinirc99.firebaseapp.com/  | |
+| https://modern.ircdocs.horse/ | |
+| https://int10h.org/oldschool-pc-fonts/ | |
 
 ## Travel
 
