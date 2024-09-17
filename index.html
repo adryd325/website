@@ -15,14 +15,14 @@ title: home
   }
   .rss:hover {
     color: #ea580c;
-    background-color: #fdba7444;    
+    background-color: #fdba7444;
   }
   @media (prefers-color-scheme: dark) {
-  .rss:hover {
-    color: #fb923c;
-    background-color: #fdba7433
+    .rss:hover {
+      color: #fb923c;
+      background-color: #fdba7433;
+    }
   }
-}
 </style>
 
 <div class="container">
@@ -60,16 +60,14 @@ title: home
         >
       </li>
       <li>
-        <a class="fancy-link rss" href="/feed.xml"
-          >RSS Feed +</a
-        >
+        <a class="fancy-link rss" href="/feed.xml">RSS Feed +</a>
       </li>
     </ul>
   </section>
   <section>
     <h2>contact me</h2>
     <ul>
-      <li>
+      <!-- <li>
         <a
           class="fancy-link"
           rel="me"
@@ -81,7 +79,7 @@ title: home
         <a class="fancy-link" rel="me" href="https://discord.gg/EBPsy82fpX"
           >discord server (for support) →</a
         >
-      </li>
+      </li> -->
       <li>
         <a class="fancy-link" rel="me" href="https://tacobelllabs.net/@adryd"
           >the fediverse (new instance) →</a
@@ -111,47 +109,39 @@ title: home
           >email →</a
         >
       </li>
-      <li>
+      <!-- <li>
         <a class="fancy-link" href="/adryd.asc">pgp pubkey</a>
-      </li>
+      </li> -->
     </ul>
   </section>
   <section>
     <h2>my friends</h2>
     <p style="image-rendering: pixelated">
       <img src="/static/buttons/adryd.png" alt="adryd" />
-      {% assign sortedHref = site.data.friends | sort: 'href' %}
-      {% assign sortedOrder = sortedHref | sort: 'order' %}
-      {% for friend in sortedOrder %}
-        {% if friend["88x31"] %}
-        <a 
-          class="inline-flex" 
-          href="{{ friend.href}}"
-          {% if friend.neko %}
-            data-neko="true"
-          {% endif %}
-        ><img 
-          src="/static/buttons/{{ friend["88x31"] }}"
-          alt="{{ friend.alt }}"
-          {% unless friend.alt %}
-            alt="NO ALT TEXT"
-            style="border: 5px solid red"
-          {% endunless %}
-          {% if friend.magic %}
-            onload="{{ friend.magic }}"
-          {% endif %}
-          /></a>
-        {% endif %}
-      {% endfor %}  
+      {% assign sortedHref = site.data.friends | sort: 'href' %} {% assign
+      sortedOrder = sortedHref | sort: 'order' %} {% for friend in sortedOrder
+      %} {% if friend["88x31"] %}
+      <a
+        class="inline-flex"
+        href="{{ friend.href}}"
+        {%
+        if
+        friend.neko
+        %}
+        data-neko="true"
+        {%
+        endif
+        %}
+        ><img src="/static/buttons/{{ friend["88x31"] }}" alt="{{ friend.alt }}"
+        {% unless friend.alt %} alt="NO ALT TEXT" style="border: 5px solid red"
+        {% endunless %} {% if friend.magic %} onload="{{ friend.magic }}" {%
+        endif %} /></a
+      >
+      {% endif %} {% endfor %}
       <br />
-      {% for friend in sortedOrder %}
-        {% unless friend["88x31"] %}
-          <a 
-            class="fancy-link" 
-            href="{{ friend.href }}"
-           >{{ friend.name }}</a>
-        {% endunless %}
-      {% endfor %} 
+      {% for friend in sortedOrder %} {% unless friend["88x31"] %}
+      <a class="fancy-link" href="{{ friend.href }}">{{ friend.name }}</a>
+      {% endunless %} {% endfor %}
     </p>
   </section>
 </div>
@@ -163,10 +153,10 @@ title: home
 <!--<![endif]-->
 <script>
   // Easter egg loader
-  const pageUrl = new URL(window.location.href)
+  const pageUrl = new URL(window.location.href);
   if (pageUrl.searchParams.has("cookie")) {
-    const cookieScript = document.createElement("script")
-    cookieScript.src = "/static/cookie/cookie.js"
-    document.body.appendChild(cookieScript)
+    const cookieScript = document.createElement("script");
+    cookieScript.src = "/static/cookie/cookie.js";
+    document.body.appendChild(cookieScript);
   }
 </script>
