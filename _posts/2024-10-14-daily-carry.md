@@ -17,7 +17,7 @@ I can carry this standalone, but often put it in my backpack when going to class
 ### Main compartment
 
 - Sharpie S Gel Pen: Cheap enough that if I loose it I wouldnt care, writes well enough
-- One of those screwdrivers you used to see at trade shows: Has phillips and flathead bits and works well enough
+- One of those screwdrivers you used to see at trade shows: Has phillips and flathead bits and works well enough as a pry tool
 - RovyVon Aurora A1 Flashlight
 
 #### Left pouch
@@ -99,6 +99,8 @@ This tech pouch has a similar story to my pencil case. It came free with my ~~xb
 
 All of the above items usually live in my backpack. My backpack is a Herschel Settlement Backpack in black. It has a large main compartment with a (not padded) laptop sleeve and water bottle pouch which is too small for a water bottle. I would not recommend. It also has a small front pouch
 
+Attached to my backpack strap is a carabiner a friend gave me which I often clip my water bottle to
+
 ### Front Pouch
 
 - NIVEA Black & White Invisible roll on anti-perspirant: I carry this specific deoderant because it's stored in a glass bottle and doesn't get crushed like paste deoderants, and doesnt squeeze out everywhere like gel deoderants.
@@ -115,6 +117,7 @@ All of the above items usually live in my backpack. My backpack is a Herschel Se
 ### Main compartment
 
 - Umbrella
+- Water bottle: Sometimes a nice thermoflask 40oz bottle, other times its just a disposable waterbottle that I reuse for a few weeks
 
 ## Floating
 
