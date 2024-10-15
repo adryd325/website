@@ -84,7 +84,8 @@
   {
     "href": "//notnite.com",
     "88x31": "notnite.png",
-    "alt": "NetNite Navigator"
+    "alt": "NetNite Navigator",
+    "order": -1
   },
   {
     "href": "//philo.gay",
