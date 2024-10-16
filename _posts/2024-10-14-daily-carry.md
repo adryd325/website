@@ -112,7 +112,7 @@ Attached to my backpack strap is a carabiner a friend gave me which I often clip
   - Benadril
   - Lactase Ensyme: I'm not personally lactose intolerant, but a bunch of friends are, and some dont carry it
   - Pepcid Antacid
-  - Flipper Zero: Maybe I should get rid of this cause conspiracy charges are cringe
+- Flipper Zero: Maybe I should get rid of this cause conspiracy charges are cringe
 
 ### Main compartment
 

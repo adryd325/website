@@ -29,7 +29,7 @@
     "href": "//breq.dev",
     "magic": "Math.random()<0.05&&(this.src='/static/buttons/breq2.png')",
     "neko": true,
-    "order": 50
+    "order": 25
   },
   {
     "88x31": "c7-badge.png",
