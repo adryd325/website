@@ -1,10 +1,7 @@
 // speedy.js - prefetch pages on hover for static html sites for browsers without speculationrules
 // Might just be placebo, idk
 (() => {
-  if (
-    !navigator.userAgent.includes("Firefox") &&
-    !navigator.userAgent.includes("Safari")
-  ) {
+  if (navigator.userAgent.includes("Chrome")) {
     // Chromium has support for speculationrules
     return;
   }
