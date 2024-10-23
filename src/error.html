@@ -1,0 +1,21 @@
+---
+permalink: /error.html
+layout: main
+title: 'error {{placeholder "http.error.status_code"}}'
+description: page not available
+---
+<div class="page-view">
+  {% include sky.svg %}
+  <center>
+    <h1 style="font-size: 10em">
+      {% raw %}{{placeholder "http.error.status_code"}}{% endraw %}
+    </h1>
+    <p class="subtitle">the page you requested is unavailable.</p>
+    <p>
+      <a class="fancy-link" href="//adryd.com">home →</a>
+      <a class="fancy-link" href="//adryd.com/pages">pages →</a>
+      <a class="fancy-link" href="//adryd.co/public">files →</a>
+    </p>
+  </center>
+  {% include ground.svg %}
+</div>

@@ -1,3 +1,1 @@
-# website
-
-websited :p
+# adryd-website

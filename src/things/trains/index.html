@@ -1,0 +1,186 @@
+---
+layout: post
+title: trains!!!
+excerpt: >-
+  hehe i like trains :3
+subtitle: >-
+  hehe I like trains :3
+---
+<style>
+  @keyframes bump {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(12deg);
+    }
+
+    60% {
+      transform: rotate(-15deg);
+    }
+
+    100% {
+      rotate: rotate(0deg);
+    }
+  }
+
+  html {
+    --fancy-link-text-color: #4d7c0f;
+    --fancy-link-text-color-hover: #65a30d;
+    --fancy-link-background-color: #a3e63533;
+    --fancy-link-background-color-hover: #bef26433;
+
+    --subtle-link-background-color: #bef26433;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html {
+      --fancy-link-text-color: #84cc16;
+      --fancy-link-text-color-hover: #a3e635;
+      --fancy-link-background-color: #65a30d33;
+      --fancy-link-background-color-hover: #84cc1633;
+
+      --subtle-link-background-color: #bef26433;
+    }
+  }
+
+  img {
+    height: 100px;
+  }
+</style>
+<p>
+  Original svgs can be downloaded from the
+  <a class="fancy-link" href="https://github.com/adryd325/train-graphics">github repository →</a>. Somewhat styled after
+  <a class="fancy-link" href="https://mutant.tech">Mutant Standard Emojis →</a>. Remember to pet the trains!
+</p>
+
+<div>
+  <img alt="Bombardier BiLevel cab car in Toronto paint scheme" src="./bombardier_toronto_bilevel_coach.svg">
+  <div>
+    <h2>Toronto</h2>
+    <p>Bombardier BiLevel Cab</p>
+  </div>
+</div>
+<div>
+  <img alt="Bombardier T1" src="./bombardier_toronto_t1.svg">
+  <div>
+    <h2>Toronto</h2>
+    <p>Bombardier T1</p>
+  </div>
+</div>
+<div>
+  <img alt="Bombardier Toronto Rocket" src="./bombardier_toronto_tr.svg">
+  <div>
+    <h2>Toronto</h2>
+    <p>Bombardier Toronto Rocket</p>
+  </div>
+</div>
+<div>
+  <img alt="Train inspired by MBTA red line cars" src="./mbta_red_line.svg">
+  <div>
+    <h2>Boston</h2>
+    <p>UTDC Series 2 Red Line</p>
+  </div>
+</div>
+<div>
+  <img alt="Orange line MBTA train" src="./mbta_orange_line.svg">
+  <div>
+    <h2>Boston</h2>
+    <p>Hawker-Siddley Orange Line</p>
+  </div>
+</div>
+<div>
+  <img alt="Type 7 MBTA green line train" src="./mbta_green_line.svg">
+  <div>
+    <h2>Boston</h2>
+    <p>Kinki Sharyo Type 7 Green Line</p>
+  </div>
+</div>
+<div>
+  <img alt="Type 7 MBTA green line train" src="./mbta_blue_line.svg">
+  <div>
+    <h2>Boston</h2>
+    <p>Siemens 700 Series Blue Line</p>
+  </div>
+</div>
+<div>
+  <img alt="Type 7 MBTA green line train" src="./bart.svg">
+  <div>
+    <h2>SF Bay Area</h2>
+    <p>Rohr Industries BART A Car</p>
+  </div>
+</div>
+<div>
+  <img
+    alt="
+      Peter Witt car with New York intercity
+      paint scheme
+    "
+    src="./peter_witt_rochester_forgor.svg"
+  >
+  <div>
+    <h2>Rochester</h2>
+    <p>Peter Witt New York Intercity</p>
+  </div>
+</div>
+<div>
+  <img
+    alt="
+      Peter Witt car with Rochester
+      subway paint scheme
+    "
+    src="./peter_witt_rochester_car_60.svg"
+  >
+  <div>
+    <h2>Rochester</h2>
+    <p>Rochester Subway Car</p>
+  </div>
+</div>
+<div>
+  <img
+    alt="
+      Kawasaki Railcar Manufacturing NYC
+      R211
+    "
+    src="./nyc_r211.svg"
+  >
+  <div>
+    <h2>New York City</h2>
+    <p>R211</p>
+  </div>
+</div>
+<div>
+  <img
+    alt="
+      Alstom Metropolis Saint-Laurent in the Montreal REM paint
+      scheme
+    "
+    src="./montreal_rem.svg"
+  >
+  <div>
+    <h2>Montreal</h2>
+    <p>Alstom Metropolis Saint-Laurent REM</p>
+  </div>
+</div>
+<div>
+  <img alt="NS VIRM" src="./ns_virm.svg">
+  <div>
+    <h2>The Netherlands</h2>
+    <p>NS VIRM</p>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('.card img').forEach((img) => {
+    img.addEventListener('mouseover', () => {
+      if (img.style.animation !== 'bump 0.5s') {
+        img.style.animation = 'bump 0.5s';
+      }
+    });
+
+    img.addEventListener('animationend', () => {
+      img.style.animation = '';
+    });
+  });
+</script>

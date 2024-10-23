@@ -1,0 +1,130 @@
+---
+layout: main
+title: twitter embeds
+---
+<!--
+  <style>
+    ul,
+    ol {
+      padding-left: 0;
+      list-style-type: none;
+    }
+  </style>
+-->
+
+<style>
+  html {
+    background-color: #eb459e;
+
+    --fancy-link-text-color: #a32b6b;
+    --fancy-link-text-color-hover: #c15a91;
+    --fancy-link-background-color: #eb459e33;
+    --fancy-link-background-color-hover: #e77cb533;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  /* Twitter Embeds Special*/
+  .page {
+    margin: 24px 0 0 24px;
+    border-radius: 24px 0 0 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    height: auto;
+    padding: 0 1.5rem 1.5rem 0;
+    min-height: calc(100vh - 222px);
+  }
+
+  .no-overflow,
+  img {
+    display: block;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 1080px) {
+    .page {
+      margin: 24px 0 0 0;
+      padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html {
+      background-color: #6a2349;
+
+      --fancy-link-text-color: #eb459e;
+      --fancy-link-text-color-hover: #ef7eba;
+      --fancy-link-background-color: #eb459e33;
+      --fancy-link-background-color-hover: #e77cb533;
+    }
+  }
+</style>
+
+<div class="page">
+  <div class="page-view">
+    <!-- Hack cause of page element margin -->
+    <div style="display: flex; margin-bottom: -1.5em;">
+      {% include nav.html %}
+    </div>
+    <h1>Twitter Embeds</h1>
+    <p class="subtitle">
+      Twitter Embeds fixes embeds from Twitter, TikTok and Reddit on Discord with a goal of convinience, seamlessness,
+      and feature-completeness. It parses and obeys Discord's own markdown rules, and allows users to delete their own
+      messages
+    </p>
+    <h3><a class="fancy-link" href="https://adryd.co/twitter-embeds">add the bot →</a></h3>
+    <a class="fancy-link" href="https://github.com/adryd325/discord-twitter-video-embeds">host your own instance →</a>
+    <br>
+    <br>
+    <div class="no-overflow">
+      <img class="light" src="image.png" width="697.5">
+      <img class="dark" src="header-dark.png" width="697.5">
+    </div>
+    <h2>Usage</h2>
+    You can use the bot by
+    <a href="https://adryd.co/twitter-embeds">adding it to your Discord server</a>, or sending it a direct message. It
+    has 3 different embed modes to best fit with your server.
+    <h2>Additional Features</h2>
+    <ul>
+      <li>
+        The bot obeys spoilers, and all of Discord's markdown rules that may prevent a link from embeding (Including
+        quirks)
+      </li>
+      <li>
+        Users can delete their own re-composed messages or bot replies to their messages bt reacting with an "X" emoji.
+      </li>
+      <li>
+        The bot integrates with
+        <a
+          href="https://discordapp.com/oauth2/authorize?client_id=173441062243663872&scope=bot"
+          >HiddenPhox</a
+        >
+        and replies to HiddenPhox's quote-retweet unrolling
+      </li>
+    </ul>
+    <h2>Special Thanks</h2>
+    <ul>
+      <li><a href="https://github.com/Brecert">Brecert</a>: Twitter Guest Client Implementation.</li>
+      <li>
+        <a href="https://github.com/ytdl-org/youtube-dl">Youtube DL</a>: Reference for Instagram, Reddit, Tiktok and
+        Twitter Clients.
+      </li>
+      <li>
+        <a href="https://generalprogramming.org/">general-programming</a>: Allowing me to use proxy.knotty.dev as a
+        fallback for oversized reddit videos.
+      </li>
+      <li>
+        <a href="https://c7.pm/">Cynthia</a>: Implementing seperate upload limits for boosted servers. Various other
+        small features/improvements.
+      </li>
+    </ul>
+    <br>
+    <br>
+    And since everyone always asks:
+    <h3 class="margin-even">What's the icon supposed to be?</h3>
+    The icon is meant to a simplification of Discord's UI of a message reply.
+  </div>
+</div>
