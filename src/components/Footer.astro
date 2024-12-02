@@ -1,0 +1,54 @@
+---
+import Logo from "./Logo.astro";
+
+const today = new Date();
+
+let ornamentsEmoji = "💫 ⭐ 🌟 ✨ 🌙 🐈‍⬛".split(" ");
+const ornaments = [];
+let index;
+for (let i = 0; i < 4; i++) {
+  index = Math.floor(Math.random() * ornamentsEmoji.length);
+  ornaments.push(ornamentsEmoji[index]);
+  ornamentsEmoji.splice(index, 1);
+}
+---
+
+<footer>
+  <div class="page-view">
+    <div class="logo">
+      <a href="/"><Logo /></a>
+    </div>
+    <small
+      >copyright &copy; {today.getFullYear()} Ariana "adryd" redacted. this website
+      is dual licensed under the MIT license and <a
+        href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a
+      > license. not all images, vector graphics, scripts and other assets fall under
+      this license. visit <a href="/licenses">licenses</a> for detailed copyright
+      information. this footer is mostly here to look cool.
+      <b
+        >appreciate my work? <a href="//github.com/sponsors/adryd325"
+          >consider donating.</a
+        ></b
+      >
+      <br />
+      <span>{ornaments.join(" ")}</span>
+    </small>
+  </div>
+</footer>
+
+<style>
+  footer {
+    padding: 1.5em;
+    background-color: var(--background-color-1);
+    margin-top: auto;
+    line-height: 1rem;
+  }
+
+  small {
+    font-size: 0.75rem;
+  }
+
+  svg {
+    line-height: 0rem;
+  }
+</style>

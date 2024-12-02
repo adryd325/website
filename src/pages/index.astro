@@ -1,0 +1,130 @@
+---
+// import Default from "../layouts/Default.astro";
+import Friends from "../components/Friends.astro";
+import Default from "../layouts/Default.astro";
+import Footer from "../components/Footer.astro";
+import NekoJS from "../components/NekoJS.astro";
+import Construction from "../components/Construction.astro";
+---
+
+<Default title="home">
+  <style>
+    ul,
+    ol {
+      padding-left: 0;
+      list-style-type: none;
+    }
+    .inline-flex {
+      display: inline-flex;
+    }
+    h1 {
+      margin: 3rem 0 1rem;
+      padding: 0;
+      font-weight: 900;
+      font-size: 5rem;
+    }
+    h2 {
+      font-weight: 900;
+      font-size: 2.5rem;
+      margin: 1.5rem 0 0;
+    }
+    .subtitle {
+      font-weight: 500;
+      margin: 0;
+    }
+  </style>
+  <main>
+    <div class="page-view">
+      <h1>hi, i'm ari!</h1>
+      <p style="font-weight: 700; font-size: 1.25rem; line-height: 1">
+        (a.k.a adryd, Ariana)
+      </p>
+      <p style="font-weight: 500; font-size: 1.125rem;">
+        i'm a software developer, server administrator, designer (sometimes),
+        and overall technology obsessed witch from toronto (toronto is an
+        independent city state).
+      </p>
+      <Construction />
+      <section>
+        <h2><a class="subtle-link" href="/pages">pages →</a></h2>
+        <p class="subtitle">reference and some projects</p>
+        <ul>
+          <li>
+            <a class="fancy-link" href="/pages/trains">trains!!! →</a>
+          </li>
+          <li>
+            <a class="fancy-link" href="/pages/twitter-embeds"
+              >Twitter Embeds Bot →</a
+            >
+          </li>
+          <li>
+            <a class="fancy-link" href="/pages/bookmarks">Bookmarks →</a>
+          </li>
+          <li>
+            <a class="fancy-link" href="/pages/daily-carry">Daily Carry →</a>
+          </li>
+          <li>
+            <a class="fancy-link" href="/pages/travel-bandplan"
+              >Travel Bandplan →</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2><a class="subtle-link" href="/updates">updates →</a></h2>
+        <p class="subtitle">blog posts and more projects</p>
+        <ul>
+          <li>
+            <a class="fancy-link" href="/updates/2024-11-25-train-key"
+              >Metal 3D Printing a Train key →</a
+            >
+          </li>
+          <li>
+            <a
+              class="fancy-link"
+              href="/updates/2024-08-05-chat-lag-fix-analytics"
+              >Interesting analytics for my chat-lag-fix mod →</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>contact me</h2>
+        <ul>
+          <li>
+            <a
+              class="fancy-link"
+              rel="me"
+              href="https://tacobelllabs.net/@adryd">the fediverse →</a
+            >
+          </li>
+          <li>
+            <a class="fancy-link" rel="me" href="https://github.com/adryd325"
+              >github →</a
+            >
+          </li>
+          <li>
+            <a class="fancy-link" rel="me" href="https://gitlab.com/adryd"
+              >gitlab →</a
+            >
+          </li>
+          <li>
+            <a
+              class="fancy-link"
+              style="cursor: pointer"
+              href="mailto:"
+              onclick="this.href=`mailto:${('em').split('').reverse().join('')}\u0040${window.location.host}`"
+              >email →</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>my friends</h2>
+        <Friends />
+      </section>
+    </div>
+  </main>
+</Default>
+<Footer />
+<NekoJS />

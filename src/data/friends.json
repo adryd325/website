@@ -1,0 +1,300 @@
+[
+  {
+    "88x31": "sapphic.png",
+    "alt": "Sapphic Angels",
+    "href": "//sapphic.moe/",
+    "order": 50
+  },
+  {
+    "88x31": "alula.png",
+    "alt": "alula",
+    "href": "//alula.me/",
+    "order": 50
+  },
+  {
+    "88x31": "ava.png",
+    "alt": "ava",
+    "href": "//avasilver.dev/",
+    "neko": true,
+    "order": 50
+  },
+  {
+    "href": "//bree.dev",
+    "name": "bree",
+    "order": 50
+  },
+  {
+    "88x31": "breq.png",
+    "alt": "breq!",
+    "href": "//breq.dev",
+    "magic": "Math.random()<0.05&&(this.src='/static/buttons/breq2.png')",
+    "neko": true,
+    "order": 26
+  },
+  {
+    "88x31": "c7-badge.png",
+    "alt": "c7.pm",
+    "href": "//c7.pm",
+    "neko": true,
+    "order": 25
+  },
+  {
+    "88x31": "cbax.gif",
+    "alt": "cbax",
+    "href": "//cbax.dev",
+    "order": 50
+  },
+  {
+    "88x31": "mary.png",
+    "alt": "Mary's House",
+    "href": "//coolmathgames.tech",
+    "order": 50
+  },
+  {
+    "88x31": "espi.png",
+    "alt": "Espi",
+    "href": "//espi.me",
+    "order": 50
+  },
+  {
+    "88x31": "erin.png",
+    "alt": "e2.pm",
+    "href": "//owo.me",
+    "neko": true,
+    "order": 50
+  },
+  {
+    "88x31": "fleepy.png",
+    "alt": "Fleepy",
+    "href": "//fleepy.tv",
+    "neko": true,
+    "order": 50
+  },
+  {
+    "88x31": "kibty-town.gif",
+    "alt": "kibty.town",
+    "href": "//kibty.town",
+    "neko": true,
+    "order": 50
+  },
+  {
+    "88x31": "maia.png",
+    "alt": "maia.crimew.gay",
+    "href": "//maia.crimew.gay/",
+    "neko": true,
+    "order": 50
+  },
+  {
+    "88x31": "marisakirisame.png",
+    "alt": "marisakirisame.net",
+    "href": "//marisakirisame.net/buttons/",
+    "order": 50
+  },
+  {
+    "88x31": "matdoesdev.png",
+    "alt": "matdoesdev",
+    "href": "//matdoes.dev/retro",
+    "order": 50
+  },
+  {
+    "88x31": "notnite.png",
+    "alt": "NetNite Navigator",
+    "href": "//notnite.com",
+    "order": 25
+  },
+  {
+    "88x31": "philo.png",
+    "alt": "philo",
+    "href": "//philo.gay",
+    "order": 50
+  },
+  {
+    "88x31": "r74n.png",
+    "alt": "r74n",
+    "href": "//r74n.com",
+    "order": 50
+  },
+  {
+    "88x31": "skip.png",
+    "alt": "gay men aren't real",
+    "href": "//slice.zone",
+    "order": 50
+  },
+  {
+    "88x31": "slonkazoid.apng",
+    "alt": "slonk",
+    "href": "//slonk.ing",
+    "order": 50
+  },
+  {
+    "88x31": "versarytown.png",
+    "alt": "versary town",
+    "href": "//versary.town",
+    "order": 50
+  },
+  {
+    "88x31": "vin.png",
+    "alt": "vin.pet",
+    "href": "//vin.pet",
+    "order": 50
+  },
+  {
+    "88x31": "enfys.gif",
+    "alt": "wavetable.cymru",
+    "href": "//wavetable.cymru",
+    "order": 50
+  },
+  {
+    "88x31": "winter.png",
+    "alt": "Winter",
+    "href": "//winter.cafe",
+    "order": 50
+  },
+  {
+    "88x31": "julia.png",
+    "alt": "Julia",
+    "href": "//juliaviolet.dev",
+    "neko": true,
+    "order": 50
+  },
+  {
+    "88x31": "mia.png",
+    "alt": "Miakizz",
+    "href": "//miakizz.quest",
+    "order": 50
+  },
+  {
+    "88x31": "maxine.png",
+    "alt": "BigMax",
+    "href": "//prsmaticwolf.itch.io",
+    "order": 50
+  },
+  {
+    "88x31": "tris.png",
+    "alt": "Tris",
+    "href": "//tris.fyi",
+    "neko": true,
+    "order": 50
+  },
+  {
+    "88x31": "megu.png",
+    "alt": "Megu",
+    "href": "//megu.dev",
+    "order": 50
+  },
+  {
+    "88x31": "cole.png",
+    "alt": "Cole Paws",
+    "href": "//colepaws.pet",
+    "order": 50
+  },
+  {
+    "88x31": "gh.gif",
+    "alt": "GIF OF A ROTATING FISH",
+    "href": "//meower.moe",
+    "order": 50
+  },
+  {
+    "88x31": "lun4.gif",
+    "alt": "lun-4",
+    "href": "//l4.pm",
+    "order": 50
+  },
+  {
+    "88x31": "hunter.png",
+    "alt": "h",
+    "href": "//pixilic.com/",
+    "order": 50
+  },
+  {
+    "88x31": "jay.png",
+    "alt": "cat staring at the viewer",
+    "href": "//hl2.sh",
+    "order": 50
+  },
+  {
+    "88x31": "shrecknt.png",
+    "alt": "Shwecky",
+    "href": "//shrecked.dev",
+    "order": 50
+  },
+  {
+    "88x31": "honbra.png",
+    "alt": "H",
+    "href": "//honbra.com",
+    "order": 50
+  },
+  {
+    "88x31": "infernocomms.png",
+    "alt": "Inferno Communications",
+    "href": "//infernocomms.com",
+    "order": 100
+  },
+  {
+    "88x31": "battle-of-wits.gif",
+    "alt": "Battle of Wits!",
+    "href": "//adryd.co/wits.mp4",
+    "order": 100
+  },
+  {
+    "88x31": "88x31.png",
+    "alt": "eightyeightthirty.one",
+    "href": "//eightyeightthirty.one",
+    "order": 100
+  },
+  {
+    "88x31": "notnet.png",
+    "alt": "notnet",
+    "href": "//n2.pm",
+    "order": 100
+  },
+  {
+    "88x31": "glauca.gif",
+    "alt": "glauca.digital: domains, hosting, dns",
+    "href": "//glauca.digital",
+    "order": 100
+  },
+  {
+    "88x31": "ezri.png",
+    "alt": "ezri.pet",
+    "href": "//ezri.pet",
+    "order": 50
+  },
+  {
+    "88x31": "queercomputerclub.png",
+    "alt": "queer computer club",
+    "href": "//queercomputerclub.ca",
+    "order": 100
+  },
+  {
+    "88x31": "makeafish.png",
+    "alt": "come back at 11:11",
+    "href": "http://makea.fish",
+    "order": 100
+  },
+  {
+    "href": "//ave.zone",
+    "name": "ave",
+    "order": 50
+  },
+  {
+    "href": "//emma.cafe/",
+    "name": "emma",
+    "order": 50
+  },
+  {
+    "href": "//jpegzilla.com/",
+    "name": "jpegzilla",
+    "order": 50
+  },
+  {
+    "href": "//sdomi.pl",
+    "name": "domi",
+    "order": 50
+  },
+  {
+    "href": "//izzy.horse",
+    "name": "izzy",
+    "order": 50
+  }
+]
