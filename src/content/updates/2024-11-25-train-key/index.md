@@ -12,7 +12,6 @@ I'm not entirely sure of my motivation behind this, but I decided I wanted one.
 
 The Toronto Transit Commission and GO Transit seem to both share a utility key. Measuring the socket it's a 8 mm square hole with little wings to prevent any old piece of square bar from fitting. The TTC employees call it the "Cab Key"; probably because it also opens the operator's cab.
 ![Photo of a cab key posted by a TTC employee](original-key.jpg)![Photo of the key hole for the cab key. A square hole about 8 mm on each side with little triangles in the center of each face protruding around 1.5 mm into the square hole preventing any off the shelf square wrench from fitting](key-hole.jpg)
-_sorry for the blurry image. I'll take a better photo whenever I remember next_
 
 I got lucky and the local train museum happened to have one and allowed me to measure it.
 ![Antique micrometer measuring the cab key to be 0.305 inches or 7.76 mm](micrometer.jpg)
