@@ -3,14 +3,28 @@ import { getCollection } from "astro:content";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
 export async function GET(context) {
-  const posts = await getCollection("updates");
+  const updates = await getCollection("updates").then((posts) =>
+    posts
+      .filter((a) => a.data.draft != true)
+      .map((post) => ({
+        ...post.data,
+        pubDate: post.data.date,
+        link: `/updates/${post.slug}/`,
+      }))
+  );
+  const pages = await getCollection("pages").then((posts) =>
+    posts
+      .filter((a) => a.data.draft != true)
+      .map((post) => ({
+        ...post.data,
+        pubDate: post.data.date,
+        link: `/pages/${post.slug}/`,
+      }))
+  );
   return rss({
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
     site: context.site,
-    items: posts.map((post) => ({
-      ...post.data,
-      link: `/updates/${post.slug}/`,
-    })),
+    items: [...pages, ...updates],
   });
 }

@@ -9,7 +9,7 @@ const pages = defineCollection({
       title: z.string(),
       // description: z.string(),
       // Transform string to Date object
-      date: z.coerce.date().optional(),
+      date: z.coerce.date(),
       updatedDate: z.coerce.date().optional(),
       image: image().optional(),
       imageAlt: z.string().optional(),

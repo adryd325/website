@@ -1,6 +1,7 @@
 ---
 title: Daily Carry
 updatedDate: 2024-12-02
+date: 2024-10-14
 ---
 
 I'm autistic, and I heard somewhere that autistic people like to be prepared for any situation. I definitely see that in myself and tend to overengineer what I daily carry.

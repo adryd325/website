@@ -1,6 +1,7 @@
 ---
 title: Travel Simplex Band Plan
 updatedDate: 2024-11-25
+date: 2024-06-17
 ---
 
 | Name        | Frequency    | PL Tone  | Bandwidth | Comment                                                                            |

@@ -1,13 +1,97 @@
 ---
 import Construction from "../../components/Construction.astro";
 import NavLayout from "../../layouts/NavLayout.astro";
+
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import { undefined } from "astro:schema";
+import RSSLink from "../../components/RSSLink.astro";
+
+const extraPages = [
+  {
+    slug: "cat-like-typing",
+    data: {
+      title: "Cat like typing detection",
+      date: new Date("2024-07-21"),
+      updatedDate: null,
+    },
+  },
+  {
+    slug: "twitter-embeds",
+    data: {
+      title: "Twitter Embeds Bot",
+      date: new Date("2023-07-02"),
+    },
+  },
+  {
+    slug: "trains",
+    data: {
+      title: "Trains",
+      date: new Date("2024-01-01"),
+    },
+  },
+];
+
+const posts = [
+  ...(await getCollection("pages")).filter((a) => a.data.draft != true),
+  ...extraPages,
+].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
+
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    /* width: calc(50% - 1rem); */
+  }
+  ul li img {
+    margin-bottom: 0.5rem;
+    border-radius: 12px;
+  }
+  .title {
+    margin-bottom: 0;
+  }
+  .date {
+    margin: 0;
+    color: var(--text-color-1);
+  }
+</style>
 
 <NavLayout title="pages">
   <main>
     <div class="page-view">
       <h1>Pages</h1>
-      <Construction />
+      <p>reference and some projects</p>
+      <RSSLink href="/feed.xml"> RSS Feed + </RSSLink>
+      <section>
+        <ul>
+          {
+            posts.map((post) => (
+              <li>
+                <h2 class="title">
+                  <a class="subtle-link" href={`/pages/${post.slug}/`}>
+                    {post.data.title} →
+                  </a>
+                </h2>
+                {
+                  <p class="date">
+                    <FormattedDate date={post.data.date} />
+                    {post.data.updatedDate && (
+                      <span style={{ fontStyle: "italic" }}>
+                        Last updated on{" "}
+                        <FormattedDate date={post.data.updatedDate} />
+                      </span>
+                    )}
+                  </p>
+                }
+              </li>
+            ))
+          }
+        </ul>
+      </section>
     </div>
   </main>
 </NavLayout>
