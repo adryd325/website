@@ -1,7 +1,7 @@
 ---
 title: Bookmarks
 date: 2024-05-09
-updatedDate: 2024-11-25
+updatedDate: 2024-12-03
 ---
 
 ## Really good articles
@@ -39,7 +39,14 @@ updatedDate: 2024-11-25
 | <https://startup.retropc.se/>                               | Software to get retro PC's working                       |
 | <https://ruinirc99.firebaseapp.com/>                        |                                                          |
 | <https://modern.ircdocs.horse/>                             | IRC protocol documentation                               |
-| <https://int10h.org/oldschool-pc-fonts/>                    | Oldschool PC Fonts                                       |
+
+## Fonts
+
+| URL                                      | Comment                    |
+| ---------------------------------------- | -------------------------- |
+| <https://int10h.org/oldschool-pc-fonts/> | Oldschool PC Fonts         |
+| <https://uncut.wtf/>                     | Open source fonts showcase |
+| <https://beautifulwebtype.com/>          | Open source fonts showcase |
 
 ## Travel
 
