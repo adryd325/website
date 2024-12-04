@@ -36,7 +36,7 @@ const { title, description, date, updatedDate, image, imageAlt } = Astro.props;
       }
       .title {
         margin-bottom: 1em;
-        padding: 1em 0 0;
+        /* padding: 1em 0 0; */
         /* text-align: center; */
         line-height: 1;
       }
@@ -55,9 +55,13 @@ const { title, description, date, updatedDate, image, imageAlt } = Astro.props;
   </head>
 
   <body>
-    <main>
+    <div style="padding: 0 1.5rem">
       <div class="page-view">
         <Header />
+      </div>
+    </div>
+    <main>
+      <div class="page-view">
         <article>
           <div class="hero-image">
             {image && <Image src={image} alt="" />}

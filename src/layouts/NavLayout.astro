@@ -18,7 +18,11 @@ interface Props {
     <BaseHead title={title} description={description} image={image} />
   </head>
   <body>
-    <div class="page-view"><Header /></div>
+    <div style="padding: 0 1.5rem">
+      <div class="page-view">
+        <Header />
+      </div>
+    </div>
     <slot />
     <Footer />
   </body>
