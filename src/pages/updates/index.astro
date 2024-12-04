@@ -43,7 +43,7 @@ const posts = (await getCollection("updates"))
             posts.map((post) => (
               <li>
                 <h2 class="title">
-                  <a class="subtle-link" href={`/updates  /${post.slug}/`}>
+                  <a class="subtle-link" href={`/updates/${post.slug}/`}>
                     {post.data.title} →
                   </a>
                 </h2>
