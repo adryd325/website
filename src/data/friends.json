@@ -293,8 +293,15 @@
     "order": 50
   },
   {
+    "88x31": "izzy.png",
     "href": "//izzy.horse",
-    "name": "izzy",
+    "alt": "izzy.horse",
     "order": 50
+  },
+  {
+    "88x31": "moonlightnow.gif",
+    "href": "//moon.light.pm",
+    "alt": "Mod your Discord. Moonlight Now!",
+    "order": 100
   }
 ]
